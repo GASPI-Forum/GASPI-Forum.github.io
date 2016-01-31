@@ -34,7 +34,7 @@ one-sided RDMA driven communication in a Partitioned Global Address Space.
 GASPI-1.0 was approved by the GASPI Consortium on June 14 in 2013 and
 the current version GASPI-1.0.1 was released on November 14 in 2013.
 
-[Download GASPI-1.0.1](standards/GASPI-1.0.1.pdf)
+[Download GASPI-1.0.1](https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/standards/GASPI-1.0.1.pdf)
 
 ***
 
@@ -42,7 +42,7 @@ the current version GASPI-1.0.1 was released on November 14 in 2013.
 The new release of GPI, GPI-2, provides users with an open source reference
 implementation of the GASPI standard, providing an API for C and C++ codes that facilitates
 scalable parallel applications. Further information about GPI-2 can be
-found at the [Github page](https://github.com/cc-hpc-itwm/GPI-2) or [GPI Homepage](www.gpi-site.com)
+found at the [Github page](https://github.com/cc-hpc-itwm/GPI-2) or [GPI Homepage](http://www.gpi-site.com)
 that includes software download options and links to open source community sites for GPI development.
 
 ***
