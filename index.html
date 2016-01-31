@@ -2,6 +2,9 @@
 layout: default
 ---
 
+{% capture forum %}{% include forum.md %}{% endcapture %}
+{{ forum | markdownify }}
+
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
