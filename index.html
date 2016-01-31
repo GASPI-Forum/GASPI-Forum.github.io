@@ -4,18 +4,14 @@ layout: default
 
 {% capture forum %}{% include forum.md %}{% endcapture %}
 {{ forum | markdownify }}
-
+<hr></hr>
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+      <p>{{ post.location }}</p>
+      <p>{{ post.time }}</p>
     </article>
+    <hr></hr>
   {% endfor %}
 </div>
