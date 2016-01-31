@@ -4,7 +4,8 @@ title: GASPI
 permalink: /gaspi/
 ---
 ![alt text](https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/images/gpi_overiew.png "GPI-Architecture - en.wikipedia.org")
-_[](https://en.wikipedia.org/wiki/Global_Address_Space_Programming_Interface)_
+
+<center>[GPI-Architecture - en.wikipedia.org](https://en.wikipedia.org/wiki/Global_Address_Space_Programming_Interface) </center>
 
 GASPI stands for Global Address Space Programming Interface and
 is a Partitioned Global Address Space (PGAS) API. It aims at
