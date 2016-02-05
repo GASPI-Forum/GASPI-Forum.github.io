@@ -9,7 +9,8 @@ name: GASPI-Forum
 description: Forum of the PGAS-API GASPI
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/mater/images/gaspi-logo.png
+avatar: https://github.com/GASPI-Forum/GASPI-Forum.github.io/blob/master/images/gaspi-logo.png
+# https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/mater/images/gaspi-logo.png
 
 #
 # Flags below are optional
