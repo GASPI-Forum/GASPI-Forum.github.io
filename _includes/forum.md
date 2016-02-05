@@ -6,6 +6,9 @@ from many organizations that define and maintain the GASPI standard.
 
 ***
 
+## Statutes
+- [GASPI Forum Statutes](statutes/statutes_v2.pdf)
+
 ## Accepted errata proposals
 - [Memory Ordering](proposals/memory_model.pdf)
 - [Various Clarifications](proposals/standard_fixes.pdf)
