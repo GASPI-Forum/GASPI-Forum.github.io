@@ -7,7 +7,7 @@ from many organizations that define and maintain the GASPI standard.
 ***
 
 ## Statutes
-- [GASPI Forum statutes](statutes.md)
+- [GASPI Forum statutes](statutes)
 
 ***
 
