@@ -35,6 +35,8 @@ A: In contrast to other efforts in the PGAS community, GASPI is neither a new la
 Q: What are segments in GASPI? How can I use them? How do they differ from MPI windows?  
 A: The segments in GASPI are closely related to the MPI windows used in one-sided MPI communication. However, in GASPI these segments can be freely configured. This enables GASPI users to map the memory heterogeneity of a modern supercomputer node to GASPI segments. As examples, GASPI allows users to map the main memory of a GPGPU or Xeon Phi to a specific segment, to configure a GASPI segment per memory controller in a CC-NUMA system or to map non-volatile RAM to a specific segment. All these segments can directly read and write from/to each other – within the node and across all nodes. 
 
+![gaspi segments]({{ site.baseurl }}/images/segments.png "Segments in GASPI")
+
 Q: How could I use the configurable memory segments in GASPI? What are the use-cases for this?  
 A: The most frequent current use-case is to exploit the possibility to directly read and write from/to the GPGPU/Xeon Phi memory of other nodes. Essentially, GASPI allows the application to generate two different partitioned global address spaces for this case, with one address space across the local memory of the GPGPU/Xeon Phi and one address space across the main memory of the node. How much of this memory is reserved for this global address space (and how many memory segments are created) is left to the application programmer. 
 
