@@ -13,7 +13,6 @@
  *                 christian.simmendinger@t-systems.com
  */
 
-#include "queue.h"
 #include "success_or_die.h"
 #include "waitsome.h"
 
