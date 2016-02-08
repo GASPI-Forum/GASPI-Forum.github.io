@@ -45,6 +45,11 @@ Timeout: gaspi\_timeout\_t
 
 ##### gaspi\_proc\_init
 
+```c
+gaspi_return_t
+gaspi_proc_init ( gaspi_timeout_t const timeout )
+```
+
 - initialization of resources
   - set up of communication infrastructure if requested
   - set up of default group GASPI\_GROUP\_ALL
@@ -54,10 +59,33 @@ Timeout: gaspi\_timeout\_t
 
 ##### gaspi\_proc\_term
 
+```c
+gaspi_return_t
+gaspi_proc_term ( gaspi_timeout_t timeout )
+```
+
 - clean up
   - wait for outstanding communication to be finished
   - release resources
 - not a collective operation !
+
+##### gaspi_proc_rank
+
+```c
+gaspi_return_t
+gaspi_proc_rank ( gaspi_rank_t *rank )
+```
+
+- process/rank identification
+
+##### gaspi_proc_num
+
+```c
+gaspi_return_t
+gaspi_proc_num ( gaspi_rank_t *proc_num )
+```
+
+- number of total process/rank(s)
 
 #### 5. Hello world
 
@@ -101,6 +129,15 @@ GASPI segments have an allocation policy
 
 ##### gaspi\_segment\_create
 
+```c
+gaspi_return_t
+gaspi_segment_create ( gaspi_segment_id_t segment_id
+                     , gaspi_size_t size
+                     , gaspi_group_t group
+                     , gaspi_timeout_t timeout
+                     , gaspi_alloc_t alloc_policy )
+```
+
 - collective short cut to
   - gaspi\_segment\_alloc (for more details - see GASPI specification)
   - gaspi\_segment\_register (for more details - see GASPI specification)
@@ -126,6 +163,12 @@ One sided-communication:
 #### 9. Queues in GASPI
 
 ##### gaspi\_wait
+
+```c
+gaspi_return_t
+gaspi_wait ( gaspi_queue_id_t queue
+           , gaspi_timeout_t timeout )
+```
 
 - wait on local completion of all requests in a given queue
 - after successfull completion, all involved local buffers are valid
