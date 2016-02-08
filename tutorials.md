@@ -102,13 +102,11 @@ gaspi_proc_num ( gaspi_rank_t *proc_num )
 {% include_relative _source/helloworld.c %}
 {% endhighlight %}
 
-#### 6. A wrapper function for minimal error handling
-
 {% highlight c %}
 {% include_relative _source/success_or_die.h %}
 {% endhighlight %}
 
-#### 7. Segments
+#### 6. Segments
 
 - software abstraction of hardware memory hierarchy
   - NUMA
@@ -157,7 +155,7 @@ After successful completion, the segment is locally and remotely accessible by a
 {% include_relative _source/segments.c %}
 {% endhighlight %}
 
-#### 8. Queues in GASPI
+#### 7. Queues in GASPI
 
 Different queues available to handle the communication requests
 
@@ -189,7 +187,7 @@ gaspi_wait ( gaspi_queue_id_t queue
 - after successfull completion, all involved local buffers are valid
 
 
-#### 9. GASPI One-sided Communication
+#### 8. GASPI One-sided Communication
 
 One sided-communication:
 
@@ -252,7 +250,7 @@ gaspi_notify_reset ( gaspi_segment_id_t segment_id
 - atomically resets a given notification id and yields the old value
 
 
-#### 10. Communication example
+#### 9. Communication example
 
 - init local buffer
 - write to remote buffer
@@ -261,6 +259,14 @@ gaspi_notify_reset ( gaspi_segment_id_t segment_id
 
 {% highlight c %}
 {% include_relative _source/onesided.c %}
+{% endhighlight %}
+
+{% highlight c %}
+{% include_relative _source/assert.h %}
+{% endhighlight %}
+
+{% highlight c %}
+{% include_relative _source/waitsome.h %}
 {% endhighlight %}
 
 {% highlight c %}

@@ -1,5 +1,4 @@
 #include "waitsome.h"
-
 #include "assert.h"
 #include "success_or_die.h"
 
