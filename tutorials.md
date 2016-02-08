@@ -16,28 +16,27 @@ permalink: /tutorial/
 #### Error handling
 
 Procedure return values:
-1 GASPI\_SUCCESS
-  * designated operation successfully completed
-2 GASPI\_TIMEOUT
-  * designated operation could not be finished in the given period of time
-  * not necessarily an error
-  * the procedure has to be invoked subsequently in order to fully complete the designated operation
-3 GASPI\_ERROR
-  * designated operation failed -> check error vector
-  * Advice: Always check return value !
+- GASPI\_SUCCESS
+  - designated operation successfully completed
+- GASPI\_TIMEOUT
+  - designated operation could not be finished in the given period of time
+  - not necessarily an error
+  - the procedure has to be invoked subsequently in order to fully complete the designated operation
+- GASPI\_ERROR
+  - designated operation failed -> check error vector
+  - Advice: Always check return value !
 
 Mechanism for potentially blocking procedures
-– procedure is guaranteed to return
-• Timeout: gaspi_timeout_t
-– GASPI_TEST (0)
-• procedure completes local operations
-• Procedure does not wait for data from other processes
-– GASPI_BLOCK (-1)
-• wait indefinitely (blocking)
-– Value > 0
-• Maximum time in msec the procedure is going to wait for data
-from other ranks to make progress
-• != hard execution time
+- Procedure is guaranteed to return
+
+Timeout: gaspi_timeout_t
+- GASPI_TEST (Value  = 0)
+  - procedure completes local operations
+  - Procedure does not wait for data from other processes
+- GASPI_BLOCK (Value = -1)
+  - wait indefinitely (blocking)
+- Value > 0
+  - Maximum time in msec the procedure is going to wait for data from other ranks to make progress. Does not equal hard execution time
 
 {% highlight c %}
 {% include_relative _source/helloworld.c %}
