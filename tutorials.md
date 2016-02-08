@@ -9,9 +9,9 @@ permalink: /tutorial/
 #### 1. GASPI Execution model
 
 * GASPI features a SPMD / MPMD style of execution. 
-* All GASPI procedures come with a prefix gaspi\_ 
-* All procedures have a return value.
-* All potentially blocking procedures have a timeout mechanism.
+* all GASPI procedures come with a prefix gaspi\_ 
+* all procedures have a return value.
+* all potentially blocking procedures have a timeout mechanism.
 
 #### 2. Error handling
 
@@ -25,7 +25,7 @@ Procedure return values:
   - the procedure has to be invoked subsequently in order to fully complete the designated operation
 - GASPI\_ERROR
   - designated operation failed -> check error vector
-  - Advice: Always check return value !
+  - advice: Always check return value !
 
 #### 3. GASPI\_TIMEOUT: A timeout mechanism for potentially blocking procedures  
 
@@ -35,7 +35,7 @@ Timeout: gaspi\_timeout\_t
 
 - GASPI\_TEST (Value  = 0)
   - procedure completes local operations
-  - Procedure does not wait for data from other processes
+  - procedure does not wait for data from other processes
 - GASPI\_BLOCK (Value = -1)
   - wait indefinitely (blocking)
 - Value > 0
@@ -110,3 +110,40 @@ After successful completion, the segment is locally and remotely accessible by a
 {% highlight c %}
 {% include_relative _source/segments.c %}
 {% endhighlight %}
+
+
+#### 8. GASPI One-sided Communication
+
+
+One sided-communication:
+
+- entire communication managed by the local process only
+- remote process is not involved
+- advantage: no inherent synchronization between the local and the remote process in every communication request
+- still: At some point the remote process needs knowledge about data availability
+- managed by weak synchronization primitives
+
+#### 9. Queues in GASPI
+
+##### gaspi\_wait
+
+- wait on local completion of all requests in a given queue
+- after successfull completion, all involved local buffers are valid
+
+Different queues available to handle the communication requests
+- requests to be submitted to one of the supported queues
+- advantages
+- more scalability
+- channels for different types of requests
+- similar types of requests are queued and synchronized together but independently from other ones
+- separation of concerns
+
+Fairness of transfers posted to different queues is guaranteed
+
+- no queue should see ist communication requests delayed indefinitely
+- a queue is identified by its ID
+- synchronization of calls by the queue
+- queue order does not imply message order on the network / remote memory
+- a subsequent notify call is guaranteed to be nonovertaking for all previous posts to the same queue and rank.
+
+
