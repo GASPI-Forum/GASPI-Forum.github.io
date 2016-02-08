@@ -4,13 +4,14 @@ title: NEWS
 permalink: /news/
 ---
 
-### Tutorial at HLRS
+### Tutorial
 
-### Tutorial at KTH
+- [HLRS GASPI Tutorial 2016](http://www.hlrs.de/training/2016-06-06-gaspi/) - Efficient Parallel Programming with GASPI.
+- GASPI Tutorial at KTH
+- GASPI Tutorial at EPFL
 
-### Tutorial at EPFL
-
-### Symposium PACS 2016
+### Talks
+- PACS 2016.
 
 
 
