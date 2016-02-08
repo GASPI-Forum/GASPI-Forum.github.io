@@ -86,10 +86,12 @@ Timeout: gaspi\_timeout\_t
   - remote access by GASPI communication routines
 
 GASPI provides only a few relatively large segments
+
 - segment allocation is expensive
 - the total number of supported segments is limited by hardware constraints
 
 GASPI segments have an allocation policy
+
 - GASPI\_MEM\_UNINITIALIZED
   - memory is not initialized
 - GASPI\_MEM\_INITIALIZED
