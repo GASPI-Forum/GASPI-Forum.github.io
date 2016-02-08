@@ -6,14 +6,10 @@ permalink: /tutorial/
 
 ## Tutorials
 
-{% for c in page.source %}
-  {% capture filePath %}/_source/{{c}}{% endcapture %}
-  <a href="{{filePath}}">{{c}}</a>
-
-  {% highlight c %}
-  {% include_relative {{ filePath }} %}
-  {% endhighlight %}
-{% endfor %}
+{% capture filePath %}/_source/helloworld.c {% endcapture %}
+{% highlight c %}
+{% include_relative {{ filePath }} %}
+{% endhighlight %}
 
 
 
