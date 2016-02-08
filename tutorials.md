@@ -69,7 +69,7 @@ gaspi_proc_term ( gaspi_timeout_t timeout )
   - release resources
 - not a collective operation !
 
-##### gaspi_proc_rank
+##### gaspi\_proc\_rank
 
 ```c
 gaspi_return_t
@@ -78,7 +78,7 @@ gaspi_proc_rank ( gaspi_rank_t *rank )
 
 - process/rank identification
 
-##### gaspi_proc_num
+##### gaspi\_proc\_num
 
 ```c
 gaspi_return_t
