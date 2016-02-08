@@ -27,9 +27,7 @@ Procedure return values:
   - designated operation failed -> check error vector
   - advice: Always check return value !
 
-#### 3. GASPI\_TIMEOUT: A timeout mechanism for potentially blocking procedures  
-
-- Procedure is guaranteed to return
+#### 3. GASPI\_TIMEOUT - a timeout mechanism for potentially blocking procedures  
 
 Timeout: gaspi\_timeout\_t  
 
@@ -40,6 +38,8 @@ Timeout: gaspi\_timeout\_t
   - wait indefinitely (blocking)
 - value > 0
   - Maximum time in msec the procedure is going to wait for data from other ranks to make progress. Does not equal hard execution time
+
+- procedure is guaranteed to return
 
 #### 4. Process management
 
