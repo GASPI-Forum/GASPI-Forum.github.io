@@ -85,6 +85,8 @@ Timeout: gaspi\_timeout\_t
   - local access by ordinary memory operations
   - remote access by GASPI communication routines
 
+![gaspi segments]({{ site.baseurl }}/images/segments.png "Segments in GASPI")
+
 GASPI provides only a few relatively large segments
 
 - segment allocation is expensive
