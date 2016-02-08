@@ -1,6 +1,6 @@
 ---
 layout: page
-title: FAQ
+title: TUTORIAL
 permalink: /tutorial/
 ---
 
@@ -148,32 +148,10 @@ After successful completion, the segment is locally and remotely accessible by a
 {% include_relative _source/segments.c %}
 {% endhighlight %}
 
-
-#### 8. GASPI One-sided Communication
-
-
-One sided-communication:
-
-- entire communication managed by the local process only
-- remote process is not involved
-- advantage: no inherent synchronization between the local and the remote process in every communication request
-- still: At some point the remote process needs knowledge about data availability
-- managed by weak synchronization primitives
-
-#### 9. Queues in GASPI
-
-##### gaspi\_wait
-
-```c
-gaspi_return_t
-gaspi_wait ( gaspi_queue_id_t queue
-           , gaspi_timeout_t timeout )
-```
-
-- wait on local completion of all requests in a given queue
-- after successfull completion, all involved local buffers are valid
+#### 8. Queues in GASPI
 
 Different queues available to handle the communication requests
+
 - requests to be submitted to one of the supported queues
 - advantages
 - more scalability
@@ -190,3 +168,92 @@ Fairness of transfers posted to different queues is guaranteed
 - a subsequent notify call is guaranteed to be nonovertaking for all previous posts to the same queue and rank.
 
 
+##### gaspi\_wait
+
+```c
+gaspi_return_t
+gaspi_wait ( gaspi_queue_id_t queue
+           , gaspi_timeout_t timeout )
+```
+
+- wait on local completion of all requests in a given queue
+- after successfull completion, all involved local buffers are valid
+
+
+#### 9. GASPI One-sided Communication
+
+One sided-communication:
+
+- entire communication managed by the local process only
+- remote process is not involved
+- advantage: no inherent synchronization between the local and the remote process in every communication request
+- still: At some point the remote process needs knowledge about data availability
+- managed by weak synchronization primitives
+
+Several notifications for a given segment
+
+- identified by notification ID
+- logical association of memory location and notification
+
+##### gaspi\_write\_notify
+
+```c
+gaspi_return_t
+gaspi_write_notify ( gaspi_segment_id_t segment_id_local
+                   , gaspi_offset_t offset_local
+                   , gaspi_rank_t rank
+                   , gaspi_segment_id_t segment_id_remote
+                   , gaspi_offset_t offset_remote
+                   , gaspi_size_t size
+                   , gaspi_notification_id_t notification_id
+                   , gaspi_notification_t notification_value
+                   , gaspi_queue_id_t queue
+                   , gaspi_timeout_t timeout )
+```
+
+- post a put request into a given queue for transfering data from a local segment into a remote segment
+- posts a notification with a given value to a given queue
+- remote visibility guarantees remote data visibility of all previously posted writes in the same queue, the same segment and the same process rank
+
+
+##### gaspi\_notify\_waitsome
+
+```c
+gaspi_return_t
+gaspi_notify_waitsome ( gaspi_segment_id_t segment_id
+                      , gaspi_notification_id_t notific_begin
+                      , gaspi_number_t notification_num
+                      , gaspi_notification_id_t *first_id
+                      , gaspi_timeout_t timeout )
+```
+
+- monitors a contiguous subset of notification id‘s for a given segment
+- returns successfull if at least one of the monitored id‘s is remotely updated to a value unequal zero
+
+##### gaspi\_notify\_reset
+
+```c
+gaspi_return_t
+gaspi_notify_reset ( gaspi_segment_id_t segment_id
+                   , gaspi_notification_id_t notification_id
+                   , gaspi_notification_t *old_notification_val)
+
+```
+
+- tomically resets a given notification id and yields the old value
+
+
+#### Communication example
+
+- init local buffer
+- write to remote buffer
+- wait for data availability
+- print result
+
+{% highlight c %}
+{% include_relative _source/onesided.c %}
+{% endhighlight %}
+
+{% highlight c %}
+{% include_relative _source/waitsome.c %}
+{% endhighlight %}
