@@ -4,7 +4,7 @@ title: Partner
 permalink: /partner/
 ---
 
-### Members currently eligible to vote. (Jan. 2016)
+## Members currently eligible to vote. (Jan. 2016)
 
 <img src="http://tu-dresden.de/die_tu_dresden/zentrale_einrichtungen/zih/bilder/zih_logo" height="25" />  
 Center for Information Services and High Performance Computing (ZIH)  

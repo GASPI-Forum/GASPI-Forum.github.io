@@ -4,7 +4,7 @@ title: NEWS
 permalink: /news/
 ---
 
-### Events
+## Events
 
 
 <img src="http://www.hlrs.de/fileadmin/sys/public/images/logo.png" width="200" />  
