@@ -4,10 +4,9 @@ title: GASPI Forum Statutes
 permalink: /statutes/
 ---
 
-## GASPI Forum
+### GASPI Forum
 
 ### 1. Introduction and general Information
-
 
 #### 1.1: What is a Partitioned Global Address Space ?
 
