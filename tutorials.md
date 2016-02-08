@@ -9,7 +9,7 @@ permalink: /tutorial/
 #### GASPI Execution model
 
 * GASPI features a SPMD / MPMD style of execution. 
-* All GASPI procedures come with a prefix gaspi_ 
+* All GASPI procedures come with a prefix gaspi\_ 
 * All procedures have a return value.
 * All potentially blocking procedures have a timeout mechanism.
 
@@ -31,25 +31,47 @@ Procedure return values:
 
 - Procedure is guaranteed to return
 
-Timeout: gaspi_timeout_t  
+Timeout: gaspi\_timeout\_t  
 
-- GASPI_TEST (Value  = 0)
+- GASPI\_TEST (Value  = 0)
   - procedure completes local operations
   - Procedure does not wait for data from other processes
-- GASPI_BLOCK (Value = -1)
+- GASPI\_BLOCK (Value = -1)
   - wait indefinitely (blocking)
 - Value > 0
   - Maximum time in msec the procedure is going to wait for data from other ranks to make progress. Does not equal hard execution time
+
+
+#### Process management
+
+##### gaspi_proc_init
+
+- initialization of resources
+  - set up of communication infrastructure if requested
+  - set up of default group GASPI_GROUP_ALL
+- rank assignment
+  - position in machinefile corresponds to rank ID
+  - no default segment creation
+
+##### gaspi_proc_term
+
+- clean up
+  - wait for outstanding communication to be finished
+  - release resources
+- not a collective operation !
+
+#### Hello world
+
 
 {% highlight c %}
 {% include_relative _source/helloworld.c %}
 {% endhighlight %}
 
-#### Process management
+
+#### 
 
 {% highlight c %}
 {% include_relative _source/success_or_die.h %}
 {% endhighlight %}
-
 
 
