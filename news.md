@@ -4,8 +4,7 @@ title: NEWS
 permalink: /news/
 ---
 
-## Events
-
+### Events
 
 <img src="http://www.hlrs.de/fileadmin/sys/public/images/logo.png" width="200" />  
 [HLRS GASPI Tutorial 2016](http://www.hlrs.de/training/2016-06-06-gaspi/)  

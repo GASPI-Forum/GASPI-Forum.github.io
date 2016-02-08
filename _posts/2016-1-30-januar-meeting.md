@@ -4,7 +4,7 @@ title: Meeting - 20th January 2016
 location:  "T-Systems, Frankfurt / Main, Hahnstr. 43d (Aculeum)"
 time: 11:00 CET - 16:00 CET
 ---
-## Protocol of the GASPI Forum meeting on January, 20th, 2016, 11am - 4pm in Frankfurt/Main
+### Protocol of the GASPI Forum meeting on January, 20th, 2016, 11am - 4pm in Frankfurt/Main
 
 Attendees:
 - DLR
@@ -16,25 +16,25 @@ Attendees:
 
 _6 out of 8 members are present, the meeting has a quorum_
 
-### Introduction
+#### Introduction
 GASPI still ahead, others pick up (MPI40 notifications, openSHMEM's counting put)
 
-### Next meeting:
+#### Next meeting:
  June, 22th, 2016, Frankfurt/Main
 
-### Website:
+#### Website:
  Not in a good shape, TUD will set up a page on github-io that will be the presentation of the forum and also (github!) the collaboration platform
 
-### Clarification:
+#### Clarification:
  The definition of "member" is: Was present last time and has registered.
 
-### Change in the statues:
+#### Change in the statues:
  T-Sys proposed a change that allows for small and agreed changes in proposal texts, in order to correct spelling mistakes without forcing a new reading.
 Vote: +6
 
-### No errata proposals
+#### No errata proposals
 
-### Comment from T-Sys:
+#### Comment from T-Sys:
 Will propose to clarify that ```write_notify()``` shall _not_ be equivalent to ```write()``` followed by ```notify()```.
 
 Reason: ```The notify()``` implies a fence for all preceding ```write()``` whereas the ```write_notify()```
@@ -43,10 +43,10 @@ codes of the form ```write()``` followed by ```write_notify()```,
 which can be written as write() followed by write() followed by ```notify()```.
 The Forum agrees on that this will be an improvement.
 
-### UNI-HD:
+#### UNI-HD:
  Note on the statue: Proposal readings must have an entry in the schedule.
 
-### Proposal ```gaspi_read_notify()```:
+#### Proposal ```gaspi_read_notify()```:
  Motivation: High number of messages in flight for example in graph problems and, at the same time, never pay the cost for the latency. The example in the proposal is of that kind and shows how to implement a read pipeline using ```gaspi_read_notify()```.
 
 **Discussion: There are two forms of asymmetry introduced:**
@@ -76,7 +76,7 @@ are probably better choices.
 
 The Forum agrees that the Proposal can be accepted next time after some minor spelling mistakes has been corrected.
 
-### Proposal ```alltoallv()```:
+#### Proposal ```alltoallv()```:
 
 Situation: Each rank knows about a local situation (what data to send to which rank).
 Design aims for pipelined collectives and a good fit into GASPI.
@@ -98,7 +98,7 @@ Action points:
 - rethink the interface and check possibilities to overcome the current discussed weaknesses
 - check whether the examples for ```allreduce()``` in the spec needs to be improved
 
-### More general discussion about a core/extended API:
+#### More general discussion about a core/extended API:
 
 - Idea: Move more complex functions (like ```gaspi_segment_create()```, ```alltoallv()```, ...) into an extended API that has default implementations using the functions from a core API.
 - Question/Problem: Where is the border between the two? Criteria? -> Might be "A function is in the extended API whenever it is possible to give an efficient implementation on top of other functions."
@@ -108,13 +108,13 @@ Agreement:
 
 *No explicit distinction between core API and extended API but add an appendix that gives default implementations for more complex functions.*
 
-### Proposal ```gaspi_queue_create()```:
+#### Proposal ```gaspi_queue_create()```:
 
 Short discussion about motivation and some questions answered by ITWM.
 
 Vote: +6
 
-### Proposal ```gaspi_segment_use()```:
+#### Proposal ```gaspi_segment_use()```:
 
 Short discussion about usage and some questions answered by ITWM.
 
@@ -122,10 +122,10 @@ The parameter order requires a further check and there might be a subsequent err
 
 Vote: +6
 
-### Action points:
+#### Action points:
 
 - ITWM: Merge proposals into specification text (that will get version number 16.1)
 - TUD: set up a web page
 
-### Closing:
+#### Closing:
 statements from T-Sys and ITWM about the importance of the Forum and they express the wish to strengthen the Forum by acquiring new members.
