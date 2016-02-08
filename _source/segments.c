@@ -54,6 +54,5 @@ main(int argc,
     }
 
   SUCCESS_OR_DIE(gaspi_proc_term (GASPI_BLOCK));
-
   return EXIT_SUCCESS;
 }
