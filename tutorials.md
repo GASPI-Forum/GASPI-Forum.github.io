@@ -71,16 +71,38 @@ Timeout: gaspi\_timeout\_t
 {% include_relative _source/success_or_die.h %}
 {% endhighlight %}
 
-#### 6. Minimal error handling
+#### 7. Segments
 
-software abstraction of hardware memory hierarchy
-– NUMA
-– GPU
-– Xeon Phi
-• one partition of the PGAS
-• contiguous block of virtual memory
-– no pre-defined memory model
-– memory management up to the application
-• locally / remotely accessible
-– local access by ordinary memory operations
-– remote access by GASPI communication routines
+- Software abstraction of hardware memory hierarchy
+  - NUMA
+  - GPU
+  - Xeon Phi
+- A single partition of the Partitioned Global Address Space (PGAS)
+  - contiguous block of virtual memory
+  - no pre-defined memory model
+- Memory management up to the application
+  - locally / remotely accessible
+  - local access by ordinary memory operations
+  - remote access by GASPI communication routines
+
+GASPI provides only a few relatively large segments
+- segment allocation is expensive
+- the total number of supported segments is limited by hardware constraints
+
+GASPI segments have an allocation policy
+- GASPI\_MEM\_UNINITIALIZED
+  - memory is not initialized
+- GASPI\_MEM\_INITIALIZED
+  - memory is initialized (zeroed)
+
+##### gaspi\_segment\_create
+
+- Collective short cut to
+  - gaspi\_segment\_alloc (for more details - see GASPI specification)
+  - gaspi\_segment\_register (for more details - see GASPI specification)
+
+After successful completion, the segment is locally and remotely accessible by all ranks in the group.
+
+{% highlight c %}
+{% include_relative _source/segments.c %}
+{% endhighlight %}
