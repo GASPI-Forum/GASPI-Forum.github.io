@@ -15,13 +15,3 @@ layout: default
     <hr></hr>
   {% endfor %}
 </div>
-
-
-{% for c in site.source %}
-  {% capture filePath %}/{{c}}{% endcapture %}
-  <a href="{{filePath}}">{{c}}</a>
-  {% highlight c %}
-  {% include_relative {{ filePath }} %}
-  {% endhighlight %}
-{% endfor %}
-
