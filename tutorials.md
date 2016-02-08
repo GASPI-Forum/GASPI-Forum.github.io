@@ -6,9 +6,8 @@ permalink: /tutorial/
 
 ## Tutorials
 
-{% capture filePath %}/_source/helloworld.c {% endcapture %}
 {% highlight c %}
-{% include_relative {{ filePath }} %}
+{% include_relative _source/helloworld.c %}
 {% endhighlight %}
 
 
