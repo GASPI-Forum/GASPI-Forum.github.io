@@ -85,7 +85,7 @@ gaspi_return_t
 gaspi_proc_rank ( gaspi_rank_t *rank )
 ```
 
-- process/rank identification
+- process/rank identification, returns rank id.
 
 ##### gaspi\_proc\_num
 
@@ -94,7 +94,7 @@ gaspi_return_t
 gaspi_proc_num ( gaspi_rank_t *proc_num )
 ```
 
-- number of total process/rank(s)
+- returns total number of processes/ranks, 
 
 #### 5. Hello world
 
@@ -252,7 +252,7 @@ gaspi_notify_reset ( gaspi_segment_id_t segment_id
 - atomically resets a given notification id and yields the old value
 
 
-#### Communication example
+#### 10. Communication example
 
 - init local buffer
 - write to remote buffer
