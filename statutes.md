@@ -1,7 +1,7 @@
 ---
 layout: page
-title: FAQ
-permalink: /faq/
+title: GASPI Forum Statutes
+permalink: /statutes/
 ---
 
 ## GASPI Forum
