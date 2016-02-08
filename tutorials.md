@@ -6,7 +6,7 @@ permalink: /tutorial/
 
 ## Tutorial
 
-### GASPI Execution model
+#### GASPI Execution model
 
 * GASPI features a SPMD / MPMD style of execution. 
 * All GASPI procedures come with a prefix gaspi_ 
@@ -16,13 +16,13 @@ permalink: /tutorial/
 #### Error handling
 
 Procedure return values:
-* GASPI\_SUCCESS
+1 GASPI\_SUCCESS
   * designated operation successfully completed
-* GASPI\_TIMEOUT
+2 GASPI\_TIMEOUT
   * designated operation could not be finished in the given period of time
   * not necessarily an error
   * the procedure has to be invoked subsequently in order to fully complete the designated operation
-* GASPI\_ERROR
+3 GASPI\_ERROR
   * designated operation failed -> check error vector
   * Advice: Always check return value !
 
