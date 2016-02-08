@@ -4,7 +4,7 @@ title: TUTORIAL
 permalink: /tutorial/
 ---
 
-## Basic Tutorial
+### Basic Tutorial
 
 #### 1. GASPI Execution model
 
