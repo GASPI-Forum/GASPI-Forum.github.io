@@ -63,7 +63,6 @@ A: Typically, the corresponding implementation in GASPI would assume the form:
 ```c
  while (barrier()  != complete) work(); 
 ```
-
 If such an implementation is not possible (e.g. because work() cannot be divided into subparts), we advise the use of a dedicated thread in order to achieve the required progress for the collective. 
 
 Q: The set of collectives in GASPI appears to be somewhat limited - why is that?  
