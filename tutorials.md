@@ -20,9 +20,9 @@ Procedure return values:
 ```c
   typedef enum
   {
-    GASPI_ERROR = -1,
-    GASPI_SUCCESS = 0,
-    GASPI_TIMEOUT = 1  // ...
+    GASPI_ERROR   = -1,
+    GASPI_SUCCESS =  0,
+    GASPI_TIMEOUT =  1
   }
 ```
 - GASPI\_ERROR
