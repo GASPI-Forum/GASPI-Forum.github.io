@@ -17,15 +17,24 @@ permalink: /tutorial/
 
 Procedure return values:  
 
+```c
+  typedef enum
+  {
+    GASPI_ERROR = -1,
+    GASPI_SUCCESS = 0,
+    GASPI_TIMEOUT = 1,
+  }
+```
+- GASPI\_ERROR
+  - designated operation failed -> check error vector
+  - advice: Always check return value !
 - GASPI\_SUCCESS
   - designated operation successfully completed
 - GASPI\_TIMEOUT
   - designated operation could not be finished in the given period of time
   - not necessarily an error
   - the procedure has to be invoked subsequently in order to fully complete the designated operation
-- GASPI\_ERROR
-  - designated operation failed -> check error vector
-  - advice: Always check return value !
+
 
 #### 3. GASPI\_TIMEOUT - a timeout mechanism for potentially blocking procedures  
 
@@ -240,7 +249,7 @@ gaspi_notify_reset ( gaspi_segment_id_t segment_id
 
 ```
 
-- tomically resets a given notification id and yields the old value
+- atomically resets a given notification id and yields the old value
 
 
 #### Communication example
