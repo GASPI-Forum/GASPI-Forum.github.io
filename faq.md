@@ -5,6 +5,7 @@ permalink: /faq/
 ---
 
 ### General
+
 Q: What is GASPI?  
 A: GASPI is a Partitioned Global Address Space (PGAS) API. It aims at scalable, flexible and failure tolerant computing in massively parallel environments.  GASPI targets a paradigm shift from bulk-synchronous two-sided communication patterns towards an asynchronous communication and execution model. To that end GASPI leverages one-sided RDMA-driven communication with remote completion in a Partitioned Global Address Space. 
 ----
@@ -20,6 +21,7 @@ A: GASPI is focused on an asynchronous data-flow model for distributed memory ar
 ----
 Q: MPI supports strided datatypes. Does the same apply to GASPI too?  
 A: GASPI supports the notion of a write-list. Essentially, the application passes a list of local offsets to the GASPI API, along with a specific size for each of the offsets -- and another list with offsets and corresponding size for the remote receiver side. GASPI hence allows applications to write arbitrarily strided data from/to all nodes.
+
 ### GASPI vs. other PGAS approaches
 Q: How does GASPI compare with other PGAS approaches?  
 A: In contrast to other efforts in the PGAS community, GASPI is neither a new language (like e.g. Chapel from Cray), nor an extension to a language (like e.g. Co-Array Fortran). Instead -- very much in the spirit of MPI -- it complements existing languages like C/C++ or Fortran with a PGAS API which enables the application to leverage the concept of the Partitioned Global Address Space.  In contrast to, for example, OpenShmem or Global Arrays, GASPI is not limited to a single memory model, but provides configurable and yet globally accessible memory segments.  GASPI is interoperable with MPI and allows for incremental porting of legacy applications.
