@@ -15,7 +15,7 @@ permalink: /tutorial/
 
 #### Error handling
 
-Procedure return values:
+Procedure return values:  
 - GASPI\_SUCCESS
   - designated operation successfully completed
 - GASPI\_TIMEOUT
@@ -26,10 +26,10 @@ Procedure return values:
   - designated operation failed -> check error vector
   - Advice: Always check return value !
 
-Mechanism for potentially blocking procedures
+Mechanism for potentially blocking procedures  
 - Procedure is guaranteed to return
 
-Timeout: gaspi_timeout_t
+Timeout: gaspi_timeout_t  
 - GASPI_TEST (Value  = 0)
   - procedure completes local operations
   - Procedure does not wait for data from other processes
