@@ -13,13 +13,15 @@
  *                 christian.simmendinger@t-systems.com
  */
 
-#include "left_right.h"
 #include "queue.h"
 #include "success_or_die.h"
 #include "waitsome.h"
 
 #include <GASPI.h>
 #include <stdlib.h>
+
+#define RIGHT(iProc,nProc) ((iProc + nProc + 1) % nProc)
+#define LEFT(iProc,nProc) ((iProc + nProc - 1) % nProc)
 
 int
 main(int argc,
@@ -93,7 +95,6 @@ main(int argc,
   SUCCESS_OR_DIE(gaspi_notify_reset (segment_id,
 				     id,
 				     &value));
-
   ASSERT(value == expected);
 
   for (int j = 0; j < VLEN; ++j)
@@ -107,7 +108,7 @@ main(int argc,
 
   SUCCESS_OR_DIE(gaspi_wait (queue_id,
 			     GASPI_BLOCK));
-  
+
   SUCCESS_OR_DIE(gaspi_proc_term (GASPI_BLOCK));
 
   return EXIT_SUCCESS;
