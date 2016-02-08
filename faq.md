@@ -9,21 +9,18 @@ permalink: /faq/
 Q: What is GASPI?  
 A: GASPI is a Partitioned Global Address Space (PGAS) API. It aims at scalable, flexible and failure tolerant computing in massively parallel environments.  GASPI targets a paradigm shift from bulk-synchronous two-sided communication patterns towards an asynchronous communication and execution model. To that end GASPI leverages one-sided RDMA-driven communication with remote completion in a Partitioned Global Address Space. 
 
-Q: Is GASPI ready for industrial applications?  
-A: The GASPI specification originates from Fraunhofer ITWM’s PGAS API, GPI, whose development started in 2005. GPI offers an efficient, robust and scalable programming model which has been used in many of Fraunhofer ITWM’s industrial projects and in the meantime has completely replaced the use of MPI within the projects executed by the ITWM HPC Competence Centre.
-
 ### GASPI vs. MPI
 
 Q: How does GASPI differ from MPI?  
 A: Similar to MPI, GASPI is an API for parallel computing on distributed memory architectures.and relies on SPMD/MPMD execution. Unlike MPI however, GASPI targets asynchronous data-flow implementations rather than bulk-synchronous message exchange.  Contrary to MPI, GASPI allows for a highly flexible configuration of the required resources and features low-level support for fault-tolerant execution.  
 
 Q: Why should GASPI scale better than MPI? Isn’t one-sided communication in MPI-3.0 identical to the GASPI communication?  
-A: GASPI is focused on an asynchronous data-flow model for distributed memory architectures. Whereas in MPI one-sided communication happens in specific time intervals (called an epoch), GASPI does not require such a concept. Rather, GASPI makes use of remote completion in the form of notifications.  Data may be written asynchronously whenever it is produced, accompanied by a corresponding notification, and data is processed locally whenever the required preconditions for processing this data can be met, i.e. whenever the corresponding notifications have been flagged. The GASPI notification mechanism hence allows for a highly scalable asynchronous data-flow model, which is not only able to provide a very fine-grained overlap of communication and computation, but is also very robust w.r.t. system jitter and noise. 
+A: GASPI is focused on an asynchronous data-flow model for distributed memory architectures. Whereas in MPI one-sided communication happens in specific time intervals (called an epoch), GASPI does not require such a concept. Rather, GASPI makes use of remote completion in the form of notifications.  Data may be written asynchronously whenever it is produced, accompanied by a corresponding notification, and data is processed locally whenever the required preconditions for processing this data can be met, i.e. whenever the corresponding notifications have been flagged. The GASPI notification mechanism hence allows for a highly scalable asynchronous data-flow model, which is not only able to provide a very fine-grained overlap of communication and computation, but is also very robust w.r.t. system jitter and noise. Interestingly, we might see a similar notification-driven model in MPI 4.0.
 
 ![gaspi notify]({{ site.baseurl }}/images/send_recv_vs_notify.png "MPI send/recv rendezvous protocol vs. GASPI write_notify")
 
 Q: MPI supports strided datatypes. Does the same apply to GASPI too?  
-A: GASPI supports the notion of a write-list. Essentially, the application passes a list of local offsets to the GASPI API, along with a specific size for each of the offsets -- and another list with offsets and corresponding size for the remote receiver side. GASPI hence allows applications to write arbitrarily strided data from/to all nodes.
+A: GASPI supports the notion of a write-list. Essentially, the application passes a list of local offsets to the GASPI API, along with a specific size for each of the offsets -- and another list with offsets and corresponding size for the remote receiver side. GASPI hence allows applications to write arbitrarily strided data from/to all nodes.  
 
 ### GASPI vs. other PGAS approaches
 
