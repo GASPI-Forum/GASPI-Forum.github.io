@@ -38,7 +38,7 @@ Timeout: gaspi\_timeout\_t
   - procedure does not wait for data from other processes
 - GASPI\_BLOCK (Value = -1)
   - wait indefinitely (blocking)
-- Value > 0
+- value > 0
   - Maximum time in msec the procedure is going to wait for data from other ranks to make progress. Does not equal hard execution time
 
 #### 4. Process management
@@ -73,14 +73,14 @@ Timeout: gaspi\_timeout\_t
 
 #### 7. Segments
 
-- Software abstraction of hardware memory hierarchy
+- software abstraction of hardware memory hierarchy
   - NUMA
   - GPU
   - Xeon Phi
-- A single partition of the Partitioned Global Address Space (PGAS)
+- a single partition of the Partitioned Global Address Space (PGAS)
   - contiguous block of virtual memory
   - no pre-defined memory model
-- Memory management up to the application
+- memory management up to the application
   - locally / remotely accessible
   - local access by ordinary memory operations
   - remote access by GASPI communication routines
@@ -101,7 +101,7 @@ GASPI segments have an allocation policy
 
 ##### gaspi\_segment\_create
 
-- Collective short cut to
+- collective short cut to
   - gaspi\_segment\_alloc (for more details - see GASPI specification)
   - gaspi\_segment\_register (for more details - see GASPI specification)
 
