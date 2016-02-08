@@ -3,7 +3,9 @@ layout: page
 title: GASPI
 permalink: /gaspi/
 ---
-## Motivation
+
+### Motivation
+
 PGAS (Partitioned Global Address Space) programming models have been discussed as an alternative
 to MPI for some time. The PGAS approach offers the developer an abstract shared address space which
 simplifies the programming task and at the same time facilitates: data-locality, thread-based
@@ -17,7 +19,7 @@ including production status.
 
 ***
 
-## Global Address Space Programming Interface(GASPI)
+### Global Address Space Programming Interface(GASPI)
 
 ![alt text](https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/images/gpi_overiew.png "GPI-Architecture - en.wikipedia.org")
 
@@ -38,7 +40,7 @@ the current version GASPI-1.0.1 was released on November 14 in 2013.
 
 ***
 
-## GPI-2 - GASPI Implementation
+### GPI-2 - GASPI Implementation
 The new release of GPI, GPI-2, provides users with an open source reference
 implementation of the GASPI standard, providing an API for C and C++ codes that facilitates
 scalable parallel applications. Further information about GPI-2 can be
@@ -47,7 +49,7 @@ that includes software download options and links to open source community sites
 
 ***
 
-## Background
+### Background
 
 In the USA, the so-called "Multicore Challenge" for the software industry stimulated  the development
 of new programming languages with Berkeley's UPC (Unified Parallel C) as focal point.
