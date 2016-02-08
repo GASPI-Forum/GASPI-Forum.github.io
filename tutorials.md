@@ -40,10 +40,10 @@ Procedure return values:
 
 Timeout: gaspi\_timeout\_t  
 
-- GASPI\_TEST (Value  = 0)
+- GASPI\_TEST ( value = 0 )
   - procedure completes local operations
   - procedure does not wait for data from other processes
-- GASPI\_BLOCK (Value = -1)
+- GASPI\_BLOCK ( value = -1 )
   - wait indefinitely (blocking)
 - value > 0
   - Maximum time in msec the procedure is going to wait for data from other ranks to make progress. Does not equal hard execution time
