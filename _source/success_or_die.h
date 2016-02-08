@@ -8,13 +8,10 @@
   do                                                                    \
   {                                                                     \
     const gaspi_return_t r = f;                                         \
-                                                                        \
     if (r != GASPI_SUCCESS)                                             \
     {                                                                   \
-      gaspi_printf ("Error: '%s' [%s:%i]: %i\n", #f, __FILE__, __LINE__, r); \
-                                                                        \
+      gaspi_printf("Error: '%s' [%s:%i]: %i\n",#f,__FILE__,__LINE__,r); \
       exit (EXIT_FAILURE);                                              \
     }                                                                   \
   } while (0)
-
 #endif

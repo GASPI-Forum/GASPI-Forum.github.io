@@ -4,7 +4,7 @@ title: FAQ
 permalink: /tutorial/
 ---
 
-## Tutorial
+## Basic Tutorial
 
 #### 1. GASPI Execution model
 
@@ -61,15 +61,26 @@ Timeout: gaspi\_timeout\_t
 
 #### 5. Hello world
 
-
 {% highlight c %}
 {% include_relative _source/helloworld.c %}
 {% endhighlight %}
 
-#### 6. Minimal error handling
+#### 6. A wrapper function for minimal error handling
 
 {% highlight c %}
 {% include_relative _source/success_or_die.h %}
 {% endhighlight %}
 
+#### 6. Minimal error handling
 
+software abstraction of hardware memory hierarchy
+– NUMA
+– GPU
+– Xeon Phi
+• one partition of the PGAS
+• contiguous block of virtual memory
+– no pre-defined memory model
+– memory management up to the application
+• locally / remotely accessible
+– local access by ordinary memory operations
+– remote access by GASPI communication routines
