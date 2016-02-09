@@ -80,3 +80,13 @@ universal tool for the HPC community, The project was funded by the
 [German Ministry of Science and Education (BMBF)](https://gauss-allianz.de/de/project/title/GASPI).
 
 In 2013 the Fraunhofer-Gesellschaft awarded the [Joseph-von-Fraunhofer prize](http://www.fraunhofer.de/en/press/research-news/2013/june/programming-model-for-supercomputers-of-the-future.html) for the programming model of GPI.
+
+### Related work
+
+The PGAS API of [OpenSHMEM](http://openshmem.org) is most closely related to GASPI. 
+Similar to GASPI data transfer operations in OpenSHMEM are one-sided in nature.
+While OpenSHMEM in supports weak synchronizations (notifications) via fenced message ordering, 
+it only allows for a single fence per pair of processing elements (PE). In contrast the GASPI provides 
+general weak synchronization per data-transfer context. The queue concept of GASPI allows
+for multiple (simultaneous) notifications per PE pair, where notifications provide ordering per data context, 
+but do not enforce global ordering across the set of notifications.
