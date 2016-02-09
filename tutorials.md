@@ -252,6 +252,10 @@ gaspi_notify_reset ( gaspi_segment_id_t segment_id
 
 #### 9. Communication example
 
+- Round robin communicaiton with gaspi\_write\_notify and gaspi\_waitsome.
+
+![gaspi segments]({{ site.baseurl }}/images/roundrobin.png "Notified communication in GASPI")
+
 - init local buffer
 - write to remote buffer
 - wait for data availability
