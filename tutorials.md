@@ -284,12 +284,13 @@ Round robin communicaiton with gaspi\_write\_notify and gaspi\_waitsome.
 - highlights interoperability between GASPI and MPI
 - demonstrates how to use notified communication for improved scalability.
 
-Global transpose of a matrix for a column-based matrix distribution. 
+![Pipelined Transpose]({{ site.baseurl }}/images/Pipelined_Transpose_8192.png "Pipelined Transpose in GASPI")
 
-- hybrid implementation with global transpose followed by local transpose.
-- required communication to all target ranks is issued in single communication step. 
+Pipelined global matrix transpose (column-based matrix distribution) 
 
-- [Download Pipelined Matrix Transpose](https://github.com/PGAS-community-benchmarks/Pipelined-Transpose)
+- hybrid implementation with global transpose followed by local transpose
+- required communication to all target ranks is issued in single communication step
+- [download Pipelined Matrix Transpose](https://github.com/PGAS-community-benchmarks/Pipelined-Transpose)
 
 {% highlight c %}
 {% include_relative _source/Pipelined_transpose.c %}
