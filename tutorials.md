@@ -252,7 +252,7 @@ gaspi_notify_reset ( gaspi_segment_id_t segment_id
 
 #### 9. Communication Example
 
-- Round robin communicaiton with gaspi\_write\_notify and gaspi\_waitsome.
+Round robin communicaiton with gaspi\_write\_notify and gaspi\_waitsome.
 
 ![gaspi segments]({{ site.baseurl }}/images/roundrobin.png "Notified communication in GASPI")
 
@@ -281,24 +281,16 @@ gaspi_notify_reset ( gaspi_segment_id_t segment_id
 
 #### 10. Pipelined Matrix Transpose
 
-- the kernel calculates a global transpose of a matrix for a column-based matrix distribution. 
-- this is a hybrid implementation where a global transpose is followed by a local transpose.
+- global transpose of a matrix for a column-based matrix distribution. 
+- hybrid implementation with global transpose followed by local transpose.
+- all required communication to all target ranks is issued in a single communication step. 
 
-- GASPI implementation uses a rather naive communication algorithm, in 
-which all required communication to all target ranks is issued in a single
-phase. The notification based one sided communication requests are scheduled 
-(target rank sequence) such that we minimize network congestion, i.e. we
-always aim for bidirectional communication even though the actual
-communication is entirely one-sided.
+- [Download Pipelined Matrix Transpose Example](https://github.com/PGAS-community-benchmarks/Pipelined-Transpose)
 
 {% highlight c %}
 {% include_relative _source/Pipelined_transpose.c %}
 {% endhighlight %}
 
-{% highlight c %}
-{% include_relative _source/queue.c %}
-{% endhighlight %}
 
-{% highlight c %}
-{% include_relative _source/queue.h %}
-{% endhighlight %}
+
+
