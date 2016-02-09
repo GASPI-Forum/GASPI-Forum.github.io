@@ -48,7 +48,7 @@ Timeout: gaspi\_timeout\_t
 - value > 0
   - Maximum time in msec the procedure is going to wait for data from other ranks to make progress. Does not equal hard execution time
 
-- procedure is guaranteed to return
+Procedure is guaranteed to return
 
 #### 4. Process management
 
