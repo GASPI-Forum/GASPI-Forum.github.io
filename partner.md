@@ -2,6 +2,7 @@
 layout: page
 title: PARTNER
 permalink: /partner/
+redirect_from: "/en/partner.html"
 ---
 
 ### Members currently eligible to vote. (Jan. 2016)
