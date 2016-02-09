@@ -34,13 +34,14 @@ execution model. To that end GASPI leverages remote completion and
 one-sided RDMA driven communication in a Partitioned Global Address Space.
 
 GASPI-1.0 was approved by the GASPI Consortium on June 14 in 2013 and
-the current version GASPI-16.1 was released on November 16 in 2013.
+the current version GASPI-16.1 was released in Februar 2016.
 
 - [Download GASPI-16.1](https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/standards/GASPI-16.1.pdf)
 
 ***
 
 ### GPI-2 - GASPI Implementation
+
 The new release of GPI, GPI-2, provides users with an open source reference
 implementation of the GASPI standard, providing an API for C and C++ codes that facilitates
 scalable parallel applications. Further information about GPI-2 can be
@@ -59,8 +60,19 @@ The PGAS (Partitioned Global Address Space) approach offers the developer an abs
 address space which simplifies the programming task and at the same time facilitates: data-locality,
 thread-based programming and asynchronous communication.
 
+### History
+
 The PGAS-API of the Fraunhofer-Institute ITWM (GPI, formerly Fraunhofer Virtual Machine, FVM)
 has been developed since 2005. Since 2007 ITWM's industrial HPC projects have been exclusively
 realised using GPI, replacing the use of MPI. The PGAS-API provides MPI developers with an easy
 transition to a programming model which is geared for efficiency and scalability and which satisfies
  all of the abovementioned requirements.
+
+In 2011 the partners of Fraunhofer ITWM, Fraunhofer SCAI, TUD, T-Systems SfR, 
+DLR, KIT, FZJ, DWD and Scapos have initiated and launched the
+GASPI project to define a novel specification for a PGAS API (GASPI, based
+on GPI) and to make this novel GASPI specification a reliable, scalable and
+universal tool for the HPC community, The project was funded by the 
+[german ministry of science (BMBF)](https://gauss-allianz.de/de/project/title/GASPI)
+
+In 2013 The Fraunhofer-Gesellschaft awarded the [Joseph-von-Fraunhofer prize](http://www.fraunhofer.de/en/press/research-news/2013/june/programming-model-for-supercomputers-of-the-future.html) for the programming model of GPI.
