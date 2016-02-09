@@ -90,7 +90,5 @@ Similar to communication in GASPI, the data transfer in OpenSHMEM is one-sided i
 OpenSHMEM supports weak synchronizations (notifications) via fenced message ordering,
 but today only allows for a single fence per pair of processing elements (PE). 
 
-In contrast the GASPI provides a general concept of weak synchronization per data-transfer context. GASPI allows
-for an arbitrary number of (simultaneous) notifications per PE pair, where the notifications allow for ordering per data context.
-
-
+In contrast GASPI supports a more general concept of (named) notifications, which allows for 
+message ordering (and corresponding weak synchronization) per data context.
