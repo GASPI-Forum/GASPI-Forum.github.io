@@ -81,6 +81,8 @@ universal tool for the HPC community, The project was funded by the
 
 In 2013 the Fraunhofer-Gesellschaft awarded the [Joseph-von-Fraunhofer prize](http://www.fraunhofer.de/en/press/research-news/2013/june/programming-model-for-supercomputers-of-the-future.html) for the programming model of GPI.
 
+***
+
 ### Related work
 
 The PGAS API of [OpenSHMEM](http://openshmem.org) is most closely related to GASPI. 
