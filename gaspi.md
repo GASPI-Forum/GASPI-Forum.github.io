@@ -91,6 +91,6 @@ While OpenSHMEM supports weak synchronizations (notifications) via fenced messag
 it only allows for a single fence per pair of processing elements (PE). 
 
 In contrast the GASPI provides a general concept of weak synchronization per data-transfer context. GASPI allows
-for an arbitrary number of (simultaneous) notifications per PE pair, where the notifications are ordered per data context, 
+for an arbitrary number of (simultaneous) notifications per PE pair, where the notifications allow for ordering per data context, 
 but where a global ordering across the set of notifications is not enforced.
 
