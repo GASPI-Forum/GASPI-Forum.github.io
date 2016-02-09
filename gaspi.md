@@ -36,7 +36,7 @@ one-sided RDMA driven communication in a Partitioned Global Address Space.
 GASPI-1.0 was approved by the GASPI Consortium on June 14 in 2013 and
 the current version GASPI-16.1 was released on November 16 in 2013.
 
-[Download GASPI-16.1](https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/standards/GASPI-16.1.pdf)
+- [Download GASPI-16.1](https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/standards/GASPI-16.1.pdf)
 
 ***
 
