@@ -5,14 +5,14 @@ layout: default
 {% capture forum %}{% include forum.md %}{% endcapture %}
 {{ forum | markdownify }}
 <div class="posts">
-  <ul>
   {% for post in site.posts %}
     <article class="post">
+      <ul>
       <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
       <p>{{ post.location }}</p>
       <p>{{ post.time }}</p>
       </li>
-    </article>
       </ul>
+    </article>
   {% endfor %}
 </div>
