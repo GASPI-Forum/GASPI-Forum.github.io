@@ -98,6 +98,8 @@ gaspi_proc_num ( gaspi_rank_t *proc_num )
 
 #### 5. Hello world
 
+Example: Hello world in GASPI
+
 {% highlight c %}
 {% include_relative _source/helloworld.c %}
 {% endhighlight %}
@@ -150,6 +152,18 @@ gaspi_segment_create ( gaspi_segment_id_t segment_id
   - gaspi\_segment\_register (for more details - see GASPI specification)
 
 After successful completion, the segment is locally and remotely accessible by all ranks in the group.
+
+##### gaspi\_segment\_ptr
+
+```c
+gaspi_return_t
+gaspi_segment_ptr ( gaspi_segment_id_t segment_id
+                  , gaspi_pointer_t *pointer )
+```
+
+- returns local pointer to allocated segment
+
+Example: Segment allocation in GASPI
 
 {% highlight c %}
 {% include_relative _source/segments.c %}
@@ -260,6 +274,8 @@ Round robin communicaiton with gaspi\_write\_notify and gaspi\_waitsome.
 - write to remote buffer
 - wait for data availability
 - print result
+
+Example: Round robin communication in GASPI
 
 {% highlight c %}
 {% include_relative _source/onesided.c %}
