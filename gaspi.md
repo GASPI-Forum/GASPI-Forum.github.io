@@ -48,6 +48,8 @@ scalable parallel applications. Further information about GPI-2 can be
 found at the [Github page](https://github.com/cc-hpc-itwm/GPI-2) or [GPI Homepage](http://www.gpi-site.com)
 that includes software download options and links to open source community sites for GPI development.
 
+- [Download GPI-2](https://github.com/cc-hpc-itwm/GPI-2)
+
 ***
 
 ### Background
