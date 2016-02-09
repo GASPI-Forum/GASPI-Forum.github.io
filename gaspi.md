@@ -79,4 +79,4 @@ on GPI) and to make this novel GASPI specification a reliable, scalable and
 universal tool for the HPC community, The project was funded by the 
 [German Ministry of Science and Education (BMBF)](https://gauss-allianz.de/de/project/title/GASPI)
 
-In 2013 The Fraunhofer-Gesellschaft awarded the [Joseph-von-Fraunhofer prize](http://www.fraunhofer.de/en/press/research-news/2013/june/programming-model-for-supercomputers-of-the-future.html) for the programming model of GPI.
+In 2013 the Fraunhofer-Gesellschaft awarded the [Joseph-von-Fraunhofer prize](http://www.fraunhofer.de/en/press/research-news/2013/june/programming-model-for-supercomputers-of-the-future.html) for the programming model of GPI.
