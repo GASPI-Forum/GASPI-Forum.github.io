@@ -87,7 +87,7 @@ In 2013 the Fraunhofer-Gesellschaft awarded the [Joseph-von-Fraunhofer prize](ht
 
 The PGAS API of [OpenSHMEM](http://openshmem.org) is most closely related to GASPI. 
 Similar to communication in GASPI, the data transfer in OpenSHMEM is one-sided in nature.
-While OpenSHMEM supports weak synchronizations (notifications) via fenced message ordering, 
+OpenSHMEM supports weak synchronizations (notifications) via fenced message ordering,
 but today only allows for a single fence per pair of processing elements (PE). 
 
 In contrast the GASPI provides a general concept of weak synchronization per data-transfer context. GASPI allows
