@@ -60,6 +60,8 @@ The PGAS (Partitioned Global Address Space) approach offers the developer an abs
 address space which simplifies the programming task and at the same time facilitates: data-locality,
 thread-based programming and asynchronous communication.
 
+***
+
 ### History
 
 The PGAS-API of the Fraunhofer-Institute ITWM (GPI, formerly Fraunhofer Virtual Machine, FVM)
@@ -73,6 +75,6 @@ DLR, KIT, FZJ, DWD and Scapos have initiated and launched the
 GASPI project to define a novel specification for a PGAS API (GASPI, based
 on GPI) and to make this novel GASPI specification a reliable, scalable and
 universal tool for the HPC community, The project was funded by the 
-[german ministry of science (BMBF)](https://gauss-allianz.de/de/project/title/GASPI)
+[German Ministry of Science and Education (BMBF)](https://gauss-allianz.de/de/project/title/GASPI)
 
 In 2013 The Fraunhofer-Gesellschaft awarded the [Joseph-von-Fraunhofer prize](http://www.fraunhofer.de/en/press/research-news/2013/june/programming-model-for-supercomputers-of-the-future.html) for the programming model of GPI.
