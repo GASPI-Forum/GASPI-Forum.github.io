@@ -292,7 +292,7 @@ Pipelined global matrix transpose (column-based matrix distribution)
 - required communication to all target ranks is issued in single communication step
 - [download Pipelined Matrix Transpose](https://github.com/PGAS-community-benchmarks/Pipelined-Transpose)
 
-{% highlight c %}
+{% highlight cpp %}
 {% include_relative _source/Pipelined_transpose.c %}
 {% endhighlight %}
 

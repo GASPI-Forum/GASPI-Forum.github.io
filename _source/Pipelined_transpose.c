@@ -157,7 +157,7 @@ int main (int argc, char *argv[])
 	    block, source_array, work_array, target_array, mSize, stdout,stderr)
       {
 	// GASPI all-to-all - single comm phase
-	if (this_is_the_first_thread())
+        if (this_is_the_first_thread())
 	  {
 	    gaspi_queue_id_t queue_id = 0;
 	    int k;
@@ -185,7 +185,7 @@ int main (int argc, char *argv[])
 	  }
 
 	// multithreaded pipelined local transpose
-	int fnl;
+        int fnl;
 	do 
 	  {
 	    int l;
@@ -244,7 +244,7 @@ int main (int argc, char *argv[])
 	while (fnl < tStop-tStart+1);
 
 	// reset all notifications
-	if (this_is_the_last_thread())
+        if (this_is_the_last_thread())
 	  {
 	    int k;
 	    for (k = 0; k < nProc; ++k)
