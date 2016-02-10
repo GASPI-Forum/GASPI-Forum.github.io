@@ -3,6 +3,7 @@ layout: page
 title: GASPI
 permalink: /gaspi/
 redirect_from: "/en/project.html"
+redirect_from: "/project.html"
 ---
 
 ### Motivation

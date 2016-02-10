@@ -3,6 +3,7 @@ layout: page
 title: FAQ
 permalink: /faq/
 redirect_from: "/en/faq.html"
+redirect_from: "/faq.html"
 ---
 
 ### General
