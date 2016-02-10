@@ -37,7 +37,7 @@ Procedure return values:
   - the procedure has to be invoked subsequently in order to fully complete the designated operation
 
 
-#### 3. GASPI\_TIMEOUT - a timeout mechanism for potentially blocking procedures  
+#### 3. The GASPI timeout mechanism for potentially blocking procedures  
 
 Timeout: gaspi\_timeout\_t  
 
