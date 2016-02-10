@@ -3,7 +3,6 @@ layout: page
 title: NEWS
 permalink: /news/
 redirect_from: "/en/news.html"
-redirect_from: "/news.html"
 ---
 
 ### Events

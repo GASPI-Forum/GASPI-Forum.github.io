@@ -3,7 +3,6 @@ layout: page
 title: TUTORIAL
 permalink: /tutorial/
 redirect_from: "/en/tutorial.html"
-redirect_from: "/tutorial.html"
 ---
 
 ### Basic Tutorial
