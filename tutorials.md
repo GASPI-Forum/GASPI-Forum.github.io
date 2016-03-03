@@ -175,7 +175,9 @@ Example: Segment allocation in GASPI
 Different queues available to handle the communication requests
 
 - requests to be submitted to one of the supported queues
-- advantages
+
+Advantages  
+
 - more scalability
 - channels for different types of requests
 - similar types of requests are queued and synchronized together but independently from other ones
