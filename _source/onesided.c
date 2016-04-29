@@ -98,7 +98,7 @@ main(int argc,
 
   for (int j = 0; j < VLEN; ++j)
     {
-      gaspi_printf ("rank %d rcv elem %d: %f \n",
+      printf ("rank %d rcv elem %d: %f \n",
 		    iProc,
 		    j,
 		    rcv_array[j]);

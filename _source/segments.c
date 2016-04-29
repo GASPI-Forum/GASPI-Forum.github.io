@@ -47,7 +47,7 @@ main(int argc,
   for (int j = 0; j < VLEN; ++j)
     {
       ((double *) array)[j] = (double) (iProc * VLEN + j);
-      gaspi_printf ("rank %d elem %d: %f \n",
+      printf ("rank %d elem %d: %f \n",
 		    iProc,
 		    j,
 		    ((double *) array)[j]);
