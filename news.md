@@ -6,6 +6,12 @@ redirect_from: "/en/news.html"
 ---
 
 ### Events
+<img src="https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/images/gaspi-logo.png" width="80" >
+[GASPI Forum Meeting June 2016, Frankfurt, 22 June 2016, 13.00-17.00]
+Second GASPI Forum Meeting will take place in Frankfurt parallel to ISC 2016.
+Room D.00.63, Frankfurt / Main, Hahnstr. 43d (Aculeum), EG  
+
+---
 
 <img src="http://www.hlrs.de/fileadmin/sys/public/images/logo.png" width="200" />  
 [HLRS GASPI Tutorial 2016, Stuttgart, 6/7 June 2016](http://www.hlrs.de/training/2016-06-06-gaspi/)  
