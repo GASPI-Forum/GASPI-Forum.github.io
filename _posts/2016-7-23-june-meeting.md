@@ -70,8 +70,7 @@ End: 5pm
 - The split is write + notify shall be used for bandwidth critical transfers where write\_notify shall be used for latency critical transfers
 
 #### Addendum to errata proposal (not in the current proposal)
-- Presents the idea of aggregating and delaying transfers in order to   fire later a write\_list. In General: write should optimize available  
-bandwidth.
+- Presents the idea of aggregating and delaying transfers in order to   fire later a write\_list. In General: write should optimize available bandwidth.
 - Discussion of where should the implementation go: Application or implementation? There are arguments for both layers. Argument to put it into the library: Do no fancy things but rely on gaspi\_notify. 
 - Danger because that might change the semantics of gaspi\_wait.
   -   Conclusion: Try this out in a wrapper library in order get experience on how to implement it for different networks/applications. This would also make a later proposal stronger.
