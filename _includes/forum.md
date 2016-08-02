@@ -21,13 +21,15 @@ from many organizations that define and maintain the GASPI standard.
 ### Accepted errata proposals
 - [Memory ordering](proposals/memory_model.pdf)
 - [Various clarifications](proposals/standard_fixes.pdf)
+- [Clarifications and associated Errata for the June 2016 meeting](proposals/2016_06_gaspi_spec_change_slides.pdf)
+- [Detailed clarifications on write notify](proposals/2016_06_write_notify_clarification_slides.pdf)
 
 ### Accepted general text proposals
 - [Memory provided by applications](proposals/application_provided_memory.pdf)
 - [Queue creation and deletion](proposals/proposal_queues_creation.pdf)
+- [Notified read](proposals/read_notify_gaspi.pdf)
 
 ### First readings
-- [Notified read](readings/read_notify_gaspi.pdf)
 - [Partially evaluable alltoallV](readings/alltoall_gaspi_style.pdf)
 
 ***
