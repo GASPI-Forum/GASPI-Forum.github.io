@@ -5,6 +5,8 @@ location:  "T-Systems, Frankfurt / Main, Hahnstr. 43d (Aculeum), Room D.00.63"
 time: 13:00 CET - 17:00 CET
 ---
 
+### Protocol of the GASPI Forum meeting on June, 22th, 2016, Frankfurt/Main
+
 GASPI Forum Meeting
 Date: 2016.06.22
 Location: Frankfurt/Main, Hahnstraße 43
@@ -19,34 +21,30 @@ Participiants:
 * TU Dresden
 * Uni Heidelberg
 
-#####
-Next meeting: Frankfurt, December, 14th.
+#### Next meeting: Frankfurt, December, 14th.
 
-#####
-ACTION:
-T-System: Talk to KTH to stop running the second/old/outdated forum site.
-T-System: Prepare proposal the change  "preceding" to "other" in read_notify.
-ITWM: Render the version number instead of '\today' into the document.
-TU Dresden: Prepare proposal for clear (or no) definitions of  
-"blocking", "non-blocking".
-ITWM: Make a proposal for clarification that GASPI_ERROR shall not  
-used in equality comparison
-ITWM: Prepare Proposal that future proposals shall include a merge  
+#### ACTION:
+- T-System: Talk to KTH to stop running the second/old/outdated forum site.  
+- T-System: Prepare proposal the change  "preceding" to "other" in read_notify.  
+- ITWM: Render the version number instead of '\today' into the document.  
+- TU Dresden: Prepare proposal for clear (or no) definitions of  "blocking", "non-blocking".  
+- ITWM: Make a proposal for clarification that GASPI_ERROR shall not used in equality comparison  
+- ITWM: Prepare Proposal that future proposals shall include a merge  
 request, such that accepting the proposal could include the merge even  
-during the forum meeting.
-ITWM: Prepare proposal to allow for merge requests that gets accepted  
+during the forum meeting.  
+- ITWM: Prepare proposal to allow for merge requests that gets accepted  
 outside the forum meeting by using voting technology from github.
-T-System: Propose change of statue to allow for smaller modifications  
-even in the second reading.
-T-System: Prepare proposal for read_list_notify
-T-System: Provide a non-GPL header, the pure GASPI header using the  
-former script.
-T-System: Present good example of how to use multiple queues.
+- T-System: Propose change of statue to allow for smaller modifications  
+even in the second reading.  
+- T-System: Prepare proposal for read_list_notify  
+- T-System: Provide a non-GPL header, the pure GASPI header using the  
+former script.  
+- T-System: Present good example of how to use multiple queues.  
 
-?: Write a prototype for a library/wrapper that demonstrates how to  
-optimize bandwidth
+- ?: Write a prototype for a library/wrapper that demonstrates how to  
+optimize bandwidth  
 
-#####
+#### Future developments of GASPI
 - CS: Discussion of future developments of GASPI
 - CS: MPI 4.0 sees the inmportance of Notifications but it has not the  
 highest priority in the MPI roadmap
@@ -81,7 +79,7 @@ from the user.
 - ??1: What is it good for? Because in MPI the say that shared memory  
 is not about performance but about using less memory.
 
-#####
+####
 - Report: GASPI website has been polished and contains news,  
 announcements, information etc. Old site still running but outdated.
 - OK: Can we have another top level suffix (instead of '.de' that  
@@ -89,8 +87,7 @@ people might believe they are going to a German site).
 - Not all errata proposals are accepted. (Not clear why, probably  
 miscommunication)
 
-#####
-Errata proposal: write, write_notify: Bandwidth vs. Latency.
+#### Errata proposal: write, write_notify: Bandwidth vs. Latency.
 - CS: Explains the problem with the equivalence of write_notify ==  
 write . notify, namely that smaller notified messages (latency) can  
 not overtake bigger messages (bandwidth).
@@ -121,8 +118,7 @@ gaspi_fence.
 Vote: 6 (change the implementors advice and move the user advice into the
 CHANGELOG)
 
-#####
-Various Changes/Errata:
+#### Various Changes/Errata:
 - VE presents the several proposals
 - Proposal 4: OK: Remove the "atomic" to allow as much local work as  
 possible. Then GASPI_TEST would not mean "exit as fast as possible"  
@@ -148,13 +144,11 @@ if( ret != GASPI_SUCCESS)
 Vote for rejection of original proposal: 6
 Vote for the changed and clarified proposal: 6
 
-#####
-Proposal read_notify: Second reading
+#### Proposal read_notify: Second reading
 
 Vote: 6
 
-#####
-GASPI 2.0
+#### GASPI 2.0
 - Need a project for that!?
 - Communication context: Will touch all functions signatures.
 - User friendliness. In the API itself (or in the standard lib) like  
