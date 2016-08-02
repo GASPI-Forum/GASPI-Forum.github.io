@@ -30,11 +30,9 @@ End: 5pm
 - ITWM: Render the version number instead of '\today' into the document.  
 - TU Dresden: Prepare proposal for clear (or no) definitions of  "blocking", "non-blocking".  
 - ITWM: Make a proposal for clarification that GASPI_ERROR shall not used in equality comparison  
-- ITWM: Prepare Proposal that future proposals shall include a merge request, such that accepting the proposal could include the merge even  
-during the forum meeting.
+- ITWM: Prepare Proposal that future proposals shall include a merge request, such that accepting the proposal could include the merge even during the forum meeting.
 - ITWM: Prepare proposal to allow for merge requests that gets accepted outside the forum meeting by using voting technology from github.
-- T-System: Propose change of statue to allow for smaller modifications 
-even in the second reading.
+- T-System: Propose change of statue to allow for smaller modifications even in the second reading.
 - T-System: Prepare proposal for read\_list\_notify. 
 - T-System: Provide a non-GPL header, the pure GASPI header using the former script.
 - T-System: Present good example of how to use multiple queues.  
@@ -43,13 +41,11 @@ even in the second reading.
 #### Future developments of GASPI
 - CS: Discussion of future developments of GASPI
 - CS: MPI 4.0 sees the inmportance of Notifications but it has not the highest priority in the MPI roadmap
-- CS: Explains the idea of using gaspi\_segment\_bind together with shmem\_open in order to get a "flat GASPI", a single process per node  
-would be the master that owns the memory and does the communication, the other processes are using the master as proxy
+- CS: Explains the idea of using gaspi\_segment\_bind together with shmem\_open in order to get a "flat GASPI", a single process per node would be the master that owns the memory and does the communication, the other processes are using the master as proxy
 - Tom: Why is it easier to change legacy code? Flat -> Flat
 - CS: Is two level "flat", the additional level could be hidden inside the communication calls.
   - VE: Why not just change the communication calls? (Simple translater?) 
-  - CS: No, we also want to use the different semantics from GASPI: You can break up the model where ever you want and move  
-step by step to a full GASPI program.
+  - CS: No, we also want to use the different semantics from GASPI: You can break up the model where ever you want and move step by step to a full GASPI program.
 - Tom: Can this be mixed with a full GASPI program? Discussion with setup of flow simulator and FLUCS working together. 
 - Maybe not  useful to mix pure thread model and flat process model!?
 - MR: What changes are required in GASPI? 
@@ -76,16 +72,13 @@ step by step to a full GASPI program.
 #### Addendum to errata proposal (not in the current proposal)
 - Presents the idea of aggregating and delaying transfers in order to   fire later a write\_list. In General: write should optimize available  
 bandwidth.
-- Discussion of where should the implementation go: Application or implementation? There are arguments for both layers. Argument to put  
-it into the library: Do no fancy things but rely on gaspi\_notify. 
+- Discussion of where should the implementation go: Application or implementation? There are arguments for both layers. Argument to put it into the library: Do no fancy things but rely on gaspi\_notify. 
 - Danger because that might change the semantics of gaspi\_wait.
-  -   Conclusion: Try this out in a wrapper library in order get experience on how to implement it for different networks/applications. This would  
-also make a later proposal stronger.
+  -   Conclusion: Try this out in a wrapper library in order get experience on how to implement it for different networks/applications. This would also make a later proposal stronger.
 - OK: Comment: There is no way now to know about the "last" write\_notify. 
 - Solution: Another function. Not required right now.
 - MR: Comment: Implementation for IB and for ETH will not change, implementation for CRAY will actually become simpler.
-- MR: Comment: In the next steps we might want to rename functions (because write\_notify != write . notify might come as a surprise to  
-users). For example gaspi\_write -> gaspi\_put and gaspi\_notify -> gaspi\_fence.
+- MR: Comment: In the next steps we might want to rename functions (because write\_notify != write . notify might come as a surprise to users). For example gaspi\_write -> gaspi\_put and gaspi\_notify -> gaspi\_fence.
 - MR: User advice not in the spec but just in the CHANGELOG.
 
 Vote: 6 (change the implementors advice and move the user advice into the
@@ -94,8 +87,7 @@ CHANGELOG)
 #### Various Changes/Errata:
 - VE presents the several proposals
 - Proposal 4: OK: Remove the "atomic" to allow as much local work as  possible. Then GASPI_TEST would not mean "exit as fast as possible"  
-but "never reach a wait state". Would neither say "all local work" nor "just an atomic part". User could observe that because now an  
-arbitrary number of callbacks in gaspi\_allreduce\_user could be done for a single test with GASPI\_TEST.
+but "never reach a wait state". Would neither say "all local work" nor "just an atomic part". User could observe that because now an arbitrary number of callbacks in gaspi\_allreduce\_user could be done for a single test with GASPI\_TEST.
 - Proposal 5: ITWM proposes another sentence "Collective operations are/will be synchronized independently from the operations on the communication queues"
 - Proposal 6: ITWM proposes another change
 
