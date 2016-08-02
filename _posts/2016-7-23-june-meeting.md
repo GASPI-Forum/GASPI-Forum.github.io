@@ -66,8 +66,8 @@ End: 5pm
 - Not all errata proposals are accepted. (Not clear why, probably miscommunication)
 
 #### Errata proposal: write, write\_notify: Bandwidth vs. Latency.
-- CS: Explains the problem with the equivalence of write\_notify == write . notify, namely that smaller notified messages (latency) can not overtake bigger messages (bandwidth). 
-- The split is write . notify shall be used for bandwidth critical transfers where write\_notify shall be used for latency critical transfers
+- CS: Explains the problem with the equivalence of write\_notify == write + notify, namely that smaller notified messages (latency) can not overtake bigger messages (bandwidth). 
+- The split is write + notify shall be used for bandwidth critical transfers where write\_notify shall be used for latency critical transfers
 
 #### Addendum to errata proposal (not in the current proposal)
 - Presents the idea of aggregating and delaying transfers in order to   fire later a write\_list. In General: write should optimize available  
@@ -78,7 +78,7 @@ bandwidth.
 - OK: Comment: There is no way now to know about the "last" write\_notify. 
 - Solution: Another function. Not required right now.
 - MR: Comment: Implementation for IB and for ETH will not change, implementation for CRAY will actually become simpler.
-- MR: Comment: In the next steps we might want to rename functions (because write\_notify != write . notify might come as a surprise to users). For example gaspi\_write -> gaspi\_put and gaspi\_notify -> gaspi\_fence.
+- MR: Comment: In the next steps we might want to rename functions (because write\_notify != write + notify might come as a surprise to users). For example gaspi\_write -> gaspi\_put and gaspi\_notify -> gaspi\_fence.
 - MR: User advice not in the spec but just in the CHANGELOG.
 
 Vote: 6 (change the implementors advice and move the user advice into the
@@ -92,14 +92,14 @@ but "never reach a wait state". Would neither say "all local work" nor "just an 
 - Proposal 6: ITWM proposes another change
 
 ```c
-while ( (ret = gaspi\_allreduce\_user()) == GASPI\_TIMEOUT)  
+while ( (ret = gaspi_allreduce_user()) == GASPI_TIMEOUT)  
 {  
-work\_on\_something\_else();
+work_on_something_else();
 }
 
-if( ret != GASPI\_SUCCESS)
+if( ret != GASPI_SUCCESS)
 {
-     handle\_error(ret);
+     handle_error(ret);
 }
 ```
 
