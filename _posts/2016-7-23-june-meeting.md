@@ -7,19 +7,20 @@ time: 13:00 CET - 17:00 CET
 
 ### Protocol of the GASPI Forum meeting on June, 22th, 2016, Frankfurt/Main
 
-GASPI Forum Meeting
-Date: 2016.06.22
-Location: Frankfurt/Main, Hahnstraße 43
-Start: 1pm
-End: ??
+GASPI Forum Meeting  
+Date: 2016.06.22  
+Location: Frankfurt/Main, Hahnstraße 43  
+Start: 1pm  
+End: 5pm  
+
 Participiants:
-* DLR (Göttingen, Köln)
-* FHG ITWM
-* IMEC
-* LRZ (not allowed to vote)
-* T-Systems
-* TU Dresden
-* Uni Heidelberg
+- DLR (Göttingen, Köln)
+- FHG ITWM
+- IMEC
+- LRZ (not allowed to vote)
+- T-Systems
+- TU Dresden
+- Uni Heidelberg
 
 #### Next meeting: Frankfurt, December, 14th.
 
@@ -31,16 +32,15 @@ Participiants:
 - ITWM: Make a proposal for clarification that GASPI_ERROR shall not used in equality comparison  
 - ITWM: Prepare Proposal that future proposals shall include a merge  
 request, such that accepting the proposal could include the merge even  
-during the forum meeting.  
+during the forum meeting.
 - ITWM: Prepare proposal to allow for merge requests that gets accepted  
 outside the forum meeting by using voting technology from github.
 - T-System: Propose change of statue to allow for smaller modifications  
-even in the second reading.  
-- T-System: Prepare proposal for read_list_notify  
+even in the second reading.
+- T-System: Prepare proposal for read_list_notify. 
 - T-System: Provide a non-GPL header, the pure GASPI header using the  
-former script.  
+former script.
 - T-System: Present good example of how to use multiple queues.  
-
 - ?: Write a prototype for a library/wrapper that demonstrates how to  
 optimize bandwidth  
 
