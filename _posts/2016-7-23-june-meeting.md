@@ -53,7 +53,7 @@ shmem\_open in order to get a "flat GASPI", a single process per node
 would be the master that owns the memory and does the communication,  
 the other processes are using the master as proxy
 - Tom: Why is it easier to change legacy code? Flat -> Flat
-  - CS: Is two level "flat", the additional level could be hidden inside  
+- CS: Is two level "flat", the additional level could be hidden inside  
 the communication calls.
   - VE: Why not just change the communication calls? (Simple  
 translater?) 
@@ -67,20 +67,20 @@ setup of flow simulator and FLUCS working together.
   - CS: Share notifications.  gaspi\_reset must ensure that all _processes_ are synchronized. GASPI  
 needs to allocate the space for the allocations in a shared memory  
 segments.
-  - OK: Where is the difference between that model and GASPI+threads? 
+- OK: Where is the difference between that model and GASPI+threads? 
   - For example global variables. This is not for new applications but to  
 port existing flat MPI codes.
-- TVa: Example codes? CS: Yes, there are some. Also CS did in the CFD  
-proxy and saw advantages.
+- TVa: Example codes? 
+  - CS: Yes, there are some. Also CS did in the CFD proxy and saw advantages.
 - Difference to MPI shared memory? 
   - Not much except that locally  _and_ globally the same mechanism for notifications can be used.
   - MR: How many ranks there are? -> For flat MPI there are many ranks,  
 the model above just has one per node. 
   - A library could hide that from the user.
-- ??1: What is it good for? In MPI shared memory  
+- What is it good for? In MPI shared memory  
 is not about performance but about using less memory.
 
-####
+#### Organization
 - Report: GASPI website has been polished and contains news,  
 announcements, information etc. Old site still running but outdated.
 - OK: Can we have another top level suffix (instead of '.de' that  
@@ -95,7 +95,8 @@ not overtake bigger messages (bandwidth).
 - The split is write . notify shall be used for bandwidth critical  
 transfers where write\_notify shall be used for latency critical  
 transfers
-Aside (this is not in the current proposal)
+
+#### Addendum to errata proposal (not in the current proposal)
 - Presents the idea of aggregating and delaying transfers in order to  
 fire later a write\_list. In General: write should optimize available  
 bandwidth.
@@ -132,6 +133,7 @@ for a single test with GASPI\_TEST.
 "Collective operations are/will be synchronized independently from the
 operations on the communication queues"
 - Proposal 6: ITWM proposes another change
+
 ```c
 while ( (ret = gaspi\_allreduce\_user()) == GASPI\_TIMEOUT)  
 {  
@@ -142,7 +144,7 @@ if( ret != GASPI\_SUCCESS)
 {
      handle\_error(ret);
 }
-```c
+```
 
 Vote for rejection of original proposal: 6  
 Vote for the changed and clarified proposal: 6  
