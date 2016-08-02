@@ -7,6 +7,13 @@ redirect_from: "/en/news.html"
 
 ### Events
 
+<img src="http://www.it4i.cz/wp-content/plugins/doptg/uploads/thumbs/wgcCBRwt62ckQEPpMXPOWHYMD4bbXpwaSXMFg9y74bTP2Aghw15Nhjwmm6Atw5cSR.jpg" width="200" />  
+[IT4I GASPI Tutorial 2016, Ostrava, 23/24 Feb 2017](http://www.it4i.cz/?lang=en/)  
+GASPI Tutorial - Efficient Parallel Programming with GASPI.  
+In this tutorial we present an asynchronous data flow programming model for Partitioned Global Address Spaces (PGAS) as an alternative to the programming model of MPI. Hands-on sessions (in C and Fortran) will allow users to immediately test and understand the basic constructs of GASPI. This two-day course provides scientific training in Computational Science.
+
+---
+
 <img src="http://www.applied-system-modeling.de/uploads/media/inno_logo_01.gif" width="200" />  
 [Innovationszentrum Applied System Modeling GASPI Tutorial 2016, Fraunhofer-Zentrum Z04.07, October, 6-7, 2016, 9 am to 5 pm](http://www.applied-system-modeling.de/veranstaltungen/veranstaltungendetails/artikel/details/course-efficient-parallel-programming-with-gaspi-2-days.html)  
 Course »Efficient Parallel Programming with GASPI«  (Training in cooperation with TU-Nachwuchsring).
