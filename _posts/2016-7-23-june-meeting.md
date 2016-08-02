@@ -53,32 +53,31 @@ shmem\_open in order to get a "flat GASPI", a single process per node
 would be the master that owns the memory and does the communication,  
 the other processes are using the master as proxy
 - Tom: Why is it easier to change legacy code? Flat -> Flat
-- CS: Is two level "flat", the additional level could be hidden inside  
+  - CS: Is two level "flat", the additional level could be hidden inside  
 the communication calls.
-- VE: Why not just change the communication calls? (Simple  
+  - VE: Why not just change the communication calls? (Simple  
 translater?) 
--- CS: No, we also want to use the different semantics  
+  - CS: No, we also want to use the different semantics  
 from GASPI: You can break up the model where ever you want and move  
 step by step to a full GASPI program.
 - Tom: Can this be mixed with a full GASPI program? Discussion with  
 setup of flow simulator and FLUCS working together. 
--- Maybe not  useful to mix pure thread model and flat process model!?
+- Maybe not  useful to mix pure thread model and flat process model!?
 - MR: What changes are required in GASPI? 
--- CS: Share notifications.  gaspi\_reset must ensure that all _processes_ are synchronized. GASPI  
+  - CS: Share notifications.  gaspi\_reset must ensure that all _processes_ are synchronized. GASPI  
 needs to allocate the space for the allocations in a shared memory  
 segments.
-- OK: Where is the difference between that model and GASPI+threads? 
--- For example global variables. This is not for new applications but to  
+  - OK: Where is the difference between that model and GASPI+threads? 
+  - For example global variables. This is not for new applications but to  
 port existing flat MPI codes.
 - TVa: Example codes? CS: Yes, there are some. Also CS did in the CFD  
 proxy and saw advantages.
 - Difference to MPI shared memory? 
--- Not much except that locally  
-_and_ globally the same mechanism for notifications can be used.
-- MR: How many ranks there are? -> For flat MPI there are many ranks,  
+  - Not much except that locally  _and_ globally the same mechanism for notifications can be used.
+  - MR: How many ranks there are? -> For flat MPI there are many ranks,  
 the model above just has one per node. 
- -- A library could hide that   from the user.
-- ??1: What is it good for? Because in MPI the say that shared memory  
+  - A library could hide that from the user.
+- ??1: What is it good for? In MPI shared memory  
 is not about performance but about using less memory.
 
 ####
@@ -103,14 +102,13 @@ bandwidth.
 - Discussion of where should the implementation go: Application or  
 implementation? There are arguments for both layers. Argument to put  
 it into the library: Do no fancy things but rely on gaspi\_notify. 
-
--- Danger because that might change the semantics of gaspi\_wait. ->  
+- Danger because that might change the semantics of gaspi\_wait. ->  
 Conclusion: Try this out in a wrapper library in order get experience  
 on how to implement it for different networks/applications. This would  
 also make a later proposal stronger.
 - OK: Comment: There is no way now to know about the "last"  
 write\_notify. 
--- Solution: Another function. Not required right now.
+- Solution: Another function. Not required right now.
 - MR: Comment: Implementation for IB and for ETH will not change,  
 implementation for CRAY will actually become simpler.
 - MR: Comment: In the next steps we might want to rename functions  
