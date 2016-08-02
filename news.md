@@ -7,10 +7,9 @@ redirect_from: "/en/news.html"
 
 ### Events
 
-<img src="http://www.applied-system-modeling.de/uploads/media/inno_logo_01.gif" width="200" />
-[Innovationszentrum Applied System Modeling GASPI Tutorial 2016, Fraunhofer-Zentrum Z04.07, October, 6-7, 2016, 9 am to 5 pm](http://www.applied-system-modeling.de/veranstaltungen/veranstaltungendetails/artikel/details/course-efficient-parallel-programming-with-gaspi-2-days.html)
-Course »Efficient Parallel Programming with GASPI« 
-Further training in cooperation with TU-Nachwuchsring.
+<img src="http://www.applied-system-modeling.de/uploads/media/inno_logo_01.gif" width="200" />  
+[Innovationszentrum Applied System Modeling GASPI Tutorial 2016, Fraunhofer-Zentrum Z04.07, October, 6-7, 2016, 9 am to 5 pm](http://www.applied-system-modeling.de/veranstaltungen/veranstaltungendetails/artikel/details/course-efficient-parallel-programming-with-gaspi-2-days.html)  
+Course »Efficient Parallel Programming with GASPI«  (training in cooperation with TU-Nachwuchsring).
 GPI-2 is the only implementation of the GASPI standard. GPI-2 has been invented and designed at Fraunhofer ITWM and is being used in academic and industrial HPC simulation applications. The HPC programmers of tomorrow will have to write codes, which are able to deal with systems hundreds of times larger than the top supercomputers of today. 
 
 ---
