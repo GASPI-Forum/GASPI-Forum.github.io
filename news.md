@@ -9,8 +9,8 @@ redirect_from: "/en/news.html"
 
 <img src="http://www.applied-system-modeling.de/uploads/media/inno_logo_01.gif" width="200" />  
 [Innovationszentrum Applied System Modeling GASPI Tutorial 2016, Fraunhofer-Zentrum Z04.07, October, 6-7, 2016, 9 am to 5 pm](http://www.applied-system-modeling.de/veranstaltungen/veranstaltungendetails/artikel/details/course-efficient-parallel-programming-with-gaspi-2-days.html)  
-Course »Efficient Parallel Programming with GASPI«  (training in cooperation with TU-Nachwuchsring).
-GPI-2 is the only implementation of the GASPI standard. GPI-2 has been invented and designed at Fraunhofer ITWM and is being used in academic and industrial HPC simulation applications. The HPC programmers of tomorrow will have to write codes, which are able to deal with systems hundreds of times larger than the top supercomputers of today. 
+Course »Efficient Parallel Programming with GASPI«  (Training in cooperation with TU-Nachwuchsring).
+GPI-2 is the only implementation of the GASPI standard. GPI-2/GASPI is being used in academic and industrial HPC simulation applications. In this Tutorial we present an asynchronous dataflow programming model for Partitioned Global Address Spaces (PGAS). Interoperability with the current programming model standard MPI and threading models will be high-lighted during the course. However no previous knowledge of MPI is assumed. GASPI, which stands for Global Address Space Programming Interface, is a partitioned global address space (PGAS) API. GASPI aims at asynchronous dataflow with remote completion, rather than bulk-synchronous message exchanges. GASPI follows a single/multiple program multiple data (SPMD/MPMD) approach and offers a small, yet powerful API (also see www.gaspi.de). 
 
 ---
 
