@@ -5,14 +5,14 @@ permalink: /partner/
 redirect_from: "/en/partner.html"
 ---
 
-### Members currently eligible to vote. (Jan. 2016)
+### Members currently eligible to vote. (June 2016)
 
 <img src="http://tu-dresden.de/die_tu_dresden/zentrale_einrichtungen/zih/bilder/zih_logo" height="40" />  
 Center for Information Services and High Performance Computing (ZIH)  
 
 ---
 
-<img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/93/Imec_logo.jpg/220px-Imec_logo.jpg" height="40" />  
+<img src="http://www2.imec.be/content/user/Image/imec_logo_zwart_512.jpg" height="40" />  
 Interuniversity Microelectronics Centre, Belgium (IMEC)
 
 ---
