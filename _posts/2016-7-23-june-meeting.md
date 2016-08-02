@@ -13,7 +13,7 @@ Location: Frankfurt/Main, Hahnstraße 43
 Start: 1pm  
 End: 5pm  
 
-Participiants:
+#### Participiants:
 - DLR (Göttingen, Köln)
 - FHG ITWM
 - IMEC
@@ -37,7 +37,7 @@ during the forum meeting.
 outside the forum meeting by using voting technology from github.
 - T-System: Propose change of statue to allow for smaller modifications  
 even in the second reading.
-- T-System: Prepare proposal for read_list_notify. 
+- T-System: Prepare proposal for read\_list\_notify. 
 - T-System: Provide a non-GPL header, the pure GASPI header using the  
 former script.
 - T-System: Present good example of how to use multiple queues.  
