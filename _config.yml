@@ -52,8 +52,7 @@ baseurl: ""
 #
 # !! You don't need to change any of the configuration flags below !!
 #
-
-kramdown: redcarpet
+kramdown
 highlighter: rouge
 permalink: /:title/
 
