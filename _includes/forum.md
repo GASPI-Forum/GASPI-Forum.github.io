@@ -15,11 +15,6 @@ from many organizations that define and maintain the GASPI standard.
 ### Specification
 
 - [Download GASPI-16.6](https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/standards/GASPI-16.6.pdf)
-
-***
-
-### GASPI header files and modules
-
 - [Download GASPI.h](https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/standards/GASPI.h)
 - [Download GASPI_types.h](https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/standards/GASPI_types.h)
 - [Download GASPI.f90](https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/standards/GASPI.f90)
@@ -39,7 +34,7 @@ from many organizations that define and maintain the GASPI standard.
 - [Notified read](proposals/read_notify_gaspi.pdf)
 
 ### First readings
-
+- [Notified alltoallV](readings/alltoall_gaspi_style.pdf)
 
 ***
 
