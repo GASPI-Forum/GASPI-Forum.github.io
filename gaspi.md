@@ -41,6 +41,17 @@ the current version GASPI-16.6 was released in June 2016.
 
 ***
 
+### GASPI Header files and Modules
+
+Current GASPI header files and Modules (directly derived from the GASPI specification).
+
+- [Download GASPI.h](https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/standards/GASPI.h)
+- [Download GASPI_types.h](https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/standards/GASPI_types.h)
+- [Download GASPI.f90](https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/standards/GASPI.f90)
+- [Download GASPI_types.f90](https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/standards/GASPI_types.f90)
+
+***
+
 ### GPI-2 - GASPI Implementation
 
 The new release of GPI, GPI-2, provides users with an open source reference
