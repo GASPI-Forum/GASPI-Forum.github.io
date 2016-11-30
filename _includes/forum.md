@@ -13,10 +13,15 @@ from many organizations that define and maintain the GASPI standard.
 ***
 
 ### Specification
-
 - [Download GASPI-16.6](https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/standards/GASPI-16.6.pdf)
+
+***
+
+### Header files and modules
 - [Download GASPI.h](https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/standards/GASPI.h)
 - [Download GASPI_types.h](https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/standards/GASPI_types.h)
+
+
 - [Download GASPI.f90](https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/standards/GASPI.f90)
 - [Download GASPI_types.f90](https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/standards/GASPI_types.f90)
 
