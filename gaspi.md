@@ -20,7 +20,7 @@ including production status.
 
 ***
 
-### Global Address Space Programming Interface(GASPI)
+### Global Address Space Programming Interface (GASPI)
 
 ![alt text](https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/images/gpi_overiew.png "GPI-Architecture - en.wikipedia.org")
 
@@ -41,9 +41,9 @@ the current version GASPI-16.6 was released in June 2016.
 
 ***
 
-### GASPI Header files and Modules
+### GASPI Header files and modules
 
-Current GASPI header files and Modules (directly derived from the GASPI specification).
+Current GASPI header files and modules (directly generated from the GASPI specification).
 
 - [Download GASPI.h](https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/standards/GASPI.h)
 - [Download GASPI_types.h](https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/standards/GASPI_types.h)
