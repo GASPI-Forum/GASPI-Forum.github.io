@@ -40,7 +40,7 @@ from many organizations that define and maintain the GASPI standard.
 - [Notified read](proposals/read_notify_gaspi.pdf)
 
 ### First readings
-- [Read\_list_notify](readings/read_list_notify_gaspi.pdf)
+- [Notified read\_list](readings/read_list_notify_gaspi.pdf)
 - [Notified alltoallV](readings/alltoall_gaspi_style.pdf)
 
 ***
