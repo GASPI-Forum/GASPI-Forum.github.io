@@ -7,6 +7,12 @@ redirect_from: "/en/news.html"
 
 ### Events
 
+<img src="https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/images/gaspi-logo.png" width="60" >  
+[GASPI Forum Meeting June 2017, Frankfurt, 21 June 2017, 13.00-17.00](http://www.gaspi.de/)   
+The second GASPI Forum Meeting 2017 will take place in Frankfurt / Main, Hahnstr. 43d (Aculeum), EG. The GASPI Forum is an open group and encourages new members to join the forum. For registration, please contact Christian Simmendinger (christian.simmendinger[at]t-systems-sfr.com). 
+
+---
+
 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Warwick_Crest.svg/150px-Warwick_Crest.svg.png" width="100" />  
 [Archer GASPI Tutorial 2017, 28 March 2017](https://events.prace-ri.eu/event/592/)  
 27-28 March 2017: Single-sided PGAS Communication Libraries @ University of Warwick - course given by the EPCC ARCHER CSE team and the GASPI development team.
