@@ -50,10 +50,10 @@ Frankfurt, June 21
 
 #### Reports:
 
-T-Systems: Talk to KTH to stop running the second/old/outdated forum site has been done
-T-Systems: Tutorial at LRZ: Christian has contacted Mr. Bode. It will probably happen during the next extreme scale workshop held at second quarter 2017
-T-Systems: Why do we need queues? -> Queues are needed in order to be able to provide a check for local completion
-T-Systems: Provided a non-GPL header, the pure GASPI header, generated from a script which extracts the header from the specification tex.
+- T-Systems: Talk to KTH to stop running the second/old/outdated forum site has been done
+- T-Systems: Tutorial at LRZ: Christian has contacted Mr. Bode. It will probably happen during the next extreme scale workshop held at second quarter 2017
+- T-Systems: Why do we need queues? -> Queues are needed in order to be able to provide a check for local completion
+- T-Systems: Provided a non-GPL header, the pure GASPI header, generated from a script which extracts the header from the specification tex.
 
 #### Errata proposal: GASPI\_ERROR\_END\_OF\_QUEUE  
 
@@ -62,7 +62,7 @@ less then #threads entries left -> GASPI\_ERROR\_END\_OF\_QUEUE proposal
 Georg: In the proposal there is a typo: gaspi\_wait\_queue needs to be replaced by gaspi\_wait  
 Tom: What is the relation to the timeout? The timeout only .  
 Daniel: is there still a reason for the gaspi\_queue\_size? No, it is not.  
-Olaf: it still makes sense to have gaspi\_queue\_size\_max in order to be able to estimate the amount of required queues for a given problem.
+Olaf: it still makes sense to have gaspi\_queue\_size\_max in order to be able to estimate the amount of required queues for a given problem.  
 Christian: Use gaspi\_config\_get in order to request max parameters. Throw away explicit get functions. One could put them in a standard library.  
 Rui: ITWM is missing an adaption of the paragraphs describing the behaviour in case of a full queue in all of the write, read calls containing such a section.  
 Olaf: Is GASPI\_ERROR\_END\_OF\_QUEUE really an error? No. It should be an additional return value. In case of an error we do not know what to do. However, for end of queue, we perfectly know that. So, it is not an error. Rename it to GASPI\_QUEUE\_FULL and treat it as a special return value. 
