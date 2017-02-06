@@ -7,7 +7,7 @@ redirect_from: "/en/partner.html"
 
 ### Members currently eligible to vote. (June 2016)
 
-<img src="http://tu-dresden.de/die_tu_dresden/zentrale_einrichtungen/zih/bilder/zih_logo" height="40" />  
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Zentrum_f%C3%BCr_Informationsdienste_und_Hochleistungsrechnen_%28ZIH%29.png" height="40" />  
 Center for Information Services and High Performance Computing (ZIH)  
 
 ---
@@ -22,8 +22,8 @@ German Aerospace Center (DLR)
 
 ---
 
-<img src="https://www.uni-heidelberg.de/md/zentral/startseite/logo_neu_204x107.jpg" height="40" />  
-University of Heidelberg
+<img src="https://www.lrz.de/bilder/logos/lrz-logos/lrz_logo_2014_s.png" height="40" />  
+LRZ Leibniz Supercomputing-Centre
 
 ---
 
