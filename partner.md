@@ -23,12 +23,12 @@ German Aerospace Center (DLR)
 ---
 
 <img src="https://www.lrz.de/bilder/logos/lrz-logos/lrz_logo_2014_s.png" height="40" />  
-LRZ Leibniz Supercomputing-Centre
+Leibniz Supercomputing-Centre (LRZ)
 
 ---
 
 <img src="http://www.itwm.fraunhofer.de/fileadmin/styles/01_layouts_basics/img/logo-fraunhofer-itwm.gif" height="40" />  
-Fraunhofer ITWM
+Fraunhofer ITWM (FhG)
 
 ---
 
