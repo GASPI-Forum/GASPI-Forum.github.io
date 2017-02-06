@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Next Meeting - 14th December 2016
+title: Meeting - 14th December 2016
 location:  "T-Systems, Frankfurt / Main, Wilhelm-Fay Straße"
 time: 11:00 CET - 16:00 CET
 ---
@@ -13,6 +13,7 @@ Start: 11:00h
 End: 16:00h
 
 Participants:
+
 - T-System (Christian Simmendinger)
 - LRZ (Christoph Bernauer)
 - ITWM (Rui Machado, Daniel Grünewald)
