@@ -7,6 +7,12 @@ redirect_from: "/en/news.html"
 
 ### Events
 
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Warwick_Crest.svg/150px-Warwick_Crest.svg.png" width="150" />  
+[Archer GASPI Tutorial 2017, 28 March 2017](https://events.prace-ri.eu/event/592/)  
+27-28 March 2017: Single-sided PGAS Communication Libraries @ University of Warwick - course given by the EPCC ARCHER CSE team and the GASPI development team.
+
+---
+
 <img src="https://ec.europa.eu/digital-single-market/sites/digital-agenda/files/styles/main_image/public/523698405_c_istock_0.jpg" width="100" />  
 [GPI-2 long-listed for European Innovation Radar Prize 2016](https://ec.europa.eu/digital-single-market/en/innovators)  
 GPI-2 , the open source implementation of the GASPI standard, has been long-listed for the Innovation Radar Prize 2016. A poll is now open for public vote.
@@ -21,7 +27,7 @@ The first GASPI Forum Meeting 2017 will take place in Frankfurt / Main, Hahnstr.
 ---
 
 <img src="http://www.it4i.cz/wp-content/uploads/2013/12/xVP-520x250.jpg.pagespeed.ic.RulkiSKlj6.jpg" width="150" />  
-[IT4I GASPI Tutorial 2016, Ostrava, 23/24 Feb 2017](http://www.it4i.cz/?lang=en/)  
+[IT4I GASPI Tutorial 2016, Ostrava, 2/3 March 2017](http://www.it4i.cz/?lang=en/)  
 GASPI Tutorial - Efficient Parallel Programming with GASPI.  
 In this tutorial we present an asynchronous data flow programming model for Partitioned Global Address Spaces (PGAS) as an alternative to the programming model of MPI. Hands-on sessions (in C and Fortran) will allow users to immediately test and understand the basic constructs of GASPI. 
 
