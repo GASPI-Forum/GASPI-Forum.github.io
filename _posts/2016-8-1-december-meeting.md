@@ -38,10 +38,10 @@ Next meeting: Frankfurt, June 21
 ACTION:
 
 - T-Systems: Put a hyperref package to the specification in order to allow easy browsing  
-- ZIH: Errata proposal for local completion in the gaspi notify specificication. (Remove the double "the" typo)
+- ZIH: Errata proposal for local completion in the gaspi notify specificication. (Remove double "the" typo)
 - All: What are the functions that could be removed or extracted to a standard library in order to shrink the specification
 - All: Is GASPI ready for multithreaded communication on ~1000 Threads? Start thinking about possible limitations / solutions.
-- T-Systems: Errata proposal for gaspi_write_list_notify: segment id for notification is missing in signature
+- T-Systems: Errata proposal for `gaspi_write_list_notify`: segment id for notification is missing in signature
 - T-Systems: Render the version number instead of '\today' into the document.
 - ZIH Dresden: Prepare proposal for clear (or no) definitions of "blocking", "non-blocking"
 - ITWM: Make a proposal for clarification that GASPI_ERROR shall not be used in equality comparison. Thinking about the concecpt of a GASPI_ERROR itself
