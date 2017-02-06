@@ -7,7 +7,7 @@ redirect_from: "/en/news.html"
 
 ### Events
 
-<img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Warwick_Crest.svg/150px-Warwick_Crest.svg.png" width="150" />  
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Warwick_Crest.svg/150px-Warwick_Crest.svg.png" width="100" />  
 [Archer GASPI Tutorial 2017, 28 March 2017](https://events.prace-ri.eu/event/592/)  
 27-28 March 2017: Single-sided PGAS Communication Libraries @ University of Warwick - course given by the EPCC ARCHER CSE team and the GASPI development team.
 
