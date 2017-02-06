@@ -27,10 +27,10 @@ from many organizations that define and maintain the GASPI standard.
 
 ### Accepted errata proposals
 - [End of queue errata](proposals/gaspi_end_of_queue.pdf)
-- [Clarification in Memory Ordering (Preceding vs Other)](proposals/gaspi_preceding_other.pdf)
-- [Atomic lock clarificaion (Preceding vs Other)](proposals/errata_atomic.pdf)
+- [Clarification in memory ordering (Preceding vs Other)](proposals/gaspi_preceding_other.pdf)
+- [Atomic lock clarification](proposals/errata_atomic.pdf)
 - [Memory ordering](proposals/memory_model.pdf)
-- [Various clarifications](proposals/standard_fixes.pdf)
+- [Various clarifications and typo fixes](proposals/standard_fixes.pdf)
 - [Clarifications and associated Errata for the June 2016 meeting](proposals/2016_06_gaspi_spec_change_slides.pdf)
 - [Detailed clarifications on write notify](proposals/2016_06_write_notify_clarification_slides.pdf)
 
