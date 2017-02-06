@@ -5,7 +5,7 @@ permalink: /partner/
 redirect_from: "/en/partner.html"
 ---
 
-### Members currently eligible to vote. (June 2016)
+### Members currently eligible to vote. (Januar 2017)
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Zentrum_f%C3%BCr_Informationsdienste_und_Hochleistungsrechnen_%28ZIH%29.png" height="40" />  
 Center for Information Services and High Performance Computing (ZIH)  
