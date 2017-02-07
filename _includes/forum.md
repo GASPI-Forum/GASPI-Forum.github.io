@@ -13,7 +13,7 @@ from many organizations that define and maintain the GASPI standard.
 ***
 
 ### Specification
-- [Download GASPI-16.6](https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/standards/GASPI-16.6.pdf)
+- [Download GASPI-17.1](https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/standards/GASPI-17.1.pdf)
 
 ***
 
