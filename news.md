@@ -19,7 +19,7 @@ The second GASPI Forum Meeting 2017 will take place in Frankfurt / Main, Hahnstr
 
 ---
 
-<img src="https://ec.europa.eu/digital-single-market/sites/digital-agenda/files/styles/main_image/public/523698405_c_istock_0.jpg" width="100" />  
+<img src="https:https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/images/radar-2.png" width="100" />  
 [GPI-2 long-listed for European Innovation Radar Prize 2016](https://ec.europa.eu/digital-single-market/en/innovators)  
 GPI-2 , the open source implementation of the GASPI standard, has been long-listed for the Innovation Radar Prize 2016. A poll is now open for public vote.
 GPI/GASPI could use some publicity - please vote accordingly and also please notify your friends/colleagues involved in GASPI/GPI related projects.
