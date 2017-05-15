@@ -12,7 +12,7 @@ Center for Information Services and High Performance Computing (ZIH)
 
 ---
 
-<img src="http://www2.imec.be/content/user/Image/imec_logo_zwart_512.jpg" height="40" />  
+<img src="https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/images/large.png" height="40" />  
 Interuniversity Microelectronics Centre, Belgium (IMEC)
 
 ---
