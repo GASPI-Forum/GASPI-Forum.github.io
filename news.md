@@ -13,7 +13,7 @@ The second GASPI Forum Meeting 2017 will take place in Frankfurt / Main, Hahnstr
 
 ---
 
-<img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Warwick_Crest.svg/150px-Warwick_Crest.svg.png" width="100" />  
+<img src="https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/images/new_archer_logo_small_trans.png" width="100" />  
 [Archer GASPI Tutorial 2017, 28 March 2017](https://events.prace-ri.eu/event/592/)  
 27-28 March 2017: Single-sided PGAS Communication Libraries @ University of Warwick - course given by the EPCC ARCHER CSE team and the GASPI development team.
 
