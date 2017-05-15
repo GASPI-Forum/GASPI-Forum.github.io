@@ -7,6 +7,13 @@ redirect_from: "/en/news.html"
 
 ### Events
 
+<img src="http://www.hlrs.de/fileadmin/sys/public/images/logo.png" width="200" />  
+[HLRS GASPI Tutorial 2017, Stuttgart, 3/4 July 2017](https://www.hlrs.de/de/training/2017-07-03-gaspi/)  
+GASPI Tutorial - Efficient Parallel Programming with GASPI.  
+In this tutorial we present an asynchronous data flow programming model for Partitioned Global Address Spaces (PGAS) as an alternative to the programming model of MPI. Hands-on sessions (in C and Fortran) will allow users to immediately test and understand the basic constructs of GASPI. This course provides scientific training in Computational Science, and in addition, the scientific exchange of the participants among themselves.
+
+---
+
 <img src="https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/images/gaspi-logo.png" width="60" >  
 [GASPI Forum Meeting June 2017, Frankfurt, 21 June 2017, 13.00-17.00](http://www.gaspi.de/)   
 The second GASPI Forum Meeting 2017 will take place in Frankfurt / Main, Hahnstr. 43d (Aculeum), EG. The GASPI Forum is an open group and encourages new members to join the forum. For registration, please contact Christian Simmendinger (christian.simmendinger[at]t-systems-sfr.com). 
