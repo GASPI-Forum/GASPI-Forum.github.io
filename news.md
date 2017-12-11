@@ -8,6 +8,13 @@ redirect_from: "/en/news.html"
 ### Events
 
 <img src="http://www.hlrs.de/fileadmin/sys/public/images/logo.png" width="200" />  
+[HLRS GASPI Tutorial 2018, Stuttgart, 2/3 July 2018](http://www.hlrs.de/events/training/detail-view/2018-07-02-GASPI/)  
+GASPI Tutorial - Concepts of GASPI and interoperability with other communication APIs.
+In this tutorial we present an asynchronous data flow programming model for Partitioned Global Address Spaces (PGAS) as an alternative to the programming model of MPI. Hands-on sessions (in C and Fortran) will allow users to immediately test and understand the basic constructs of GASPI. This course provides scientific training in Computational Science, and in addition, the scientific exchange of the participants among themselves.
+
+---
+
+<img src="http://www.hlrs.de/fileadmin/sys/public/images/logo.png" width="200" />  
 [HLRS GASPI Tutorial 2017, Stuttgart, 3/4 July 2017](https://www.hlrs.de/de/training/2017-07-03-gaspi/)  
 GASPI Tutorial - Efficient Parallel Programming with GASPI.  
 In this tutorial we present an asynchronous data flow programming model for Partitioned Global Address Spaces (PGAS) as an alternative to the programming model of MPI. Hands-on sessions (in C and Fortran) will allow users to immediately test and understand the basic constructs of GASPI. This course provides scientific training in Computational Science, and in addition, the scientific exchange of the participants among themselves.
