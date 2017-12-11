@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Meeting - 21th June 2017
+title: Next Meeting - 10th January 2018
 location:  "T-Systems, Frankfurt / Main, Hahnstr. 43d (Aculeum)"
-time: 13:00 CET - 17:00 CET
+time: 11:00 CET - 16:00 CET
 ---
