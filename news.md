@@ -74,7 +74,6 @@ The mini-symposium will present four talks from different application domains, w
  
 ---
 
-<img src="http://www.exa2ct.eu/sites/default/files/exa2ct_logo_smaller.png" width="80" />  
 [Exa2ct GASPI Tutorial 2016, EPFL Lausanne, 7th June 2016, 10.00-16.00] (http://www.exa2ct.eu/)  
 The GASPI tutorial is taking place in room BC 410 (map), located in the "BC building", on the EPFL campus in Lausanne. The meeting is co-located with PASC 2016 and free of charge. In this GASPI tutorial we present an asynchronous data flow programming model for Partitioned Global Address Spaces (PGAS) as an alternative to the programming model of MPI. GASPI, which stands for Global Address Space Programming Interface, is a partitioned global address space (PGAS) API. The GASPI API is designed as a C/C++/Fortran library and focused on three key objectives: scalability, flexibility and fault tolerance. 
 
@@ -82,7 +81,6 @@ For registration, please contact Christian Simmendinger (christian.simmendinger[
 
 ---
 
-<img src="https://www.pdc.kth.se/easc2016frontpage" width="200" />  
 [EASC GASPI Tutorial 2016, Stockholm, 25 April 2016](http://www.easc2016.com/gaspi-tutorial)  
 GASPI Tutorial - Efficient Parallel Programming with GASPI.  
 In this tutorial we present an asynchronous data flow programming model for Partitioned Global Address Spaces (PGAS) as an alternative to the programming model of MPI. Hands-on sessions (in C and Fortran) will allow users to immediately test and understand the basic constructs of GASPI. This course provides scientific training in Computational Science, and in addition, the scientific exchange of the participants among themselves.
