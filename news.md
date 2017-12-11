@@ -9,7 +9,7 @@ redirect_from: "/en/news.html"
 
 <img src="https://raw.githubusercontent.com/GASPI-Forum/GASPI-Forum.github.io/master/images/gaspi-logo.png" width="60" >  
 [GASPI Forum Meeting January 2018, Frankfurt, 10 January 2018, 11.00-16.00](http://www.gaspi.de/)   
-The second GASPI Forum Meeting 2018 will take place in Frankfurt / Main, Hahnstr. 43d (Aculeum), EG. The GASPI Forum is an open group and encourages new members to join the forum. For registration, please contact Christian Simmendinger (christian.simmendinger[at]t-systems-sfr.com). 
+The second GASPI Forum Meeting 2018 will take place in Frankfurt / Main, Wilhelm-Fay-Str. 54, 1. OG, A.1.08. The GASPI Forum is an open group and encourages new members to join the forum. For registration, please contact Christian Simmendinger (christian.simmendinger[at]t-systems-sfr.com). 
 
 ---
 <img src="http://www.hlrs.de/fileadmin/sys/public/images/logo.png" width="200" />  
