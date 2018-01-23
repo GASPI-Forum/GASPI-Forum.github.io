@@ -5,7 +5,14 @@ permalink: /partner/
 redirect_from: "/en/partner.html"
 ---
 
-### Members currently eligible to vote. (Januar 2017)
+### Members currently eligible to vote. (January 2018)
+
+---
+
+<img src="http://www.ut.ee/logod/TY%20%C3%BCldlogod/Ringlogo/T%C3%9C_logod_17122015_ring_sinine.png" height="40" />
+University of Tartu, Estonia
+
+---
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Zentrum_f%C3%BCr_Informationsdienste_und_Hochleistungsrechnen_%28ZIH%29.png" height="40" />  
 Center for Information Services and High Performance Computing (ZIH)  
@@ -27,7 +34,7 @@ Leibniz Supercomputing-Centre (LRZ)
 
 ---
 
-<img src="http://www.itwm.fraunhofer.de/fileadmin/styles/01_layouts_basics/img/logo-fraunhofer-itwm.gif" height="40" />  
+<img src="https://www.itwm.fraunhofer.de/content/dam/itwm/itwm.svg" height="40" />  
 Fraunhofer ITWM (FhG)
 
 ---
