@@ -7,9 +7,9 @@ time: 11:00 CET - 15:00 CET
 ### Protocol of the GASPI Forum meeting on Jan, 16th, 2019, Frankfurt/Main
 
 Date: 2019.01.16
-Location: Frankfurt/Main, Wilhelm-Fay Straße 54
-Start: 11:00h
-End: 15:00h
+Location: Frankfurt/Main, Wilhelm-Fay Straße 54 
+Start: 11:00h 
+End: 15:00h 
 
 
 Participants:
@@ -23,16 +23,16 @@ Participants:
 #### Agenda:
 
 
-11.00-11.30 Attendees, Quorum, next Forum meeting, Actions Items
-11.30-12.30 Errata proposals
-12.30-13.15 Lunch break
-13.15-14.30 General text proposals
-            First reading:
-	    1. Fine grain local completion and message tagging
-	    2. GASPI-SHAN, notified communication in shared windows (std. library).
-14.30-15.00 Voting
-15.00-16.00 Next steps
-	    1. Collectives
+11.00-11.30 Attendees, Quorum, next Forum meeting, Actions Items 
+11.30-12.30 Errata proposals 
+12.30-13.15 Lunch break 
+13.15-14.30 General text proposals 
+            First reading: 
+	    1. Fine grain local completion and message tagging 
+	    2. GASPI-SHAN, notified communication in shared windows (std. library). 
+14.30-15.00 Voting 
+15.00-16.00 Next steps 
+	    1. Collectives 
 
 
 #### Errata Proposals
