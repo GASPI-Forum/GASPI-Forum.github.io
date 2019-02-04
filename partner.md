@@ -9,11 +9,6 @@ redirect_from: "/en/partner.html"
 
 ---
 
-<img src="http://www.ut.ee/logod/TY%20%C3%BCldlogod/Ringlogo/T%C3%9C_logod_17122015_ring_sinine.png" height="40" />
-University of Tartu, Estonia
-
----
-
 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Zentrum_f%C3%BCr_Informationsdienste_und_Hochleistungsrechnen_%28ZIH%29.png" height="40" />  
 Center for Information Services and High Performance Computing (ZIH)  
 
@@ -26,11 +21,6 @@ Interuniversity Microelectronics Centre, Belgium (IMEC)
 
 <img src="http://www.dlr.de/dlr/en/portaldata/1/img/general/footer-text-logo-en.png" height="40" />  
 German Aerospace Center (DLR)
-
----
-
-<img src="https://www.lrz.de/bilder/logos/lrz-logos/lrz_logo_2014_s.png" height="40" />  
-Leibniz Supercomputing-Centre (LRZ)
 
 ---
 
