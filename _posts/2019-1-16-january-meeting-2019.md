@@ -6,7 +6,7 @@ time: 11:00 CET - 15:00 CET
 ---
 ### Protocol of the GASPI Forum meeting on Jan, 16th, 2019, Frankfurt/Main
 
-Date: 2019.01.16
+Date: 2019.01.16 
 Location: Frankfurt/Main, Wilhelm-Fay Straße 54 
 Start: 11:00h 
 End: 15:00h 
